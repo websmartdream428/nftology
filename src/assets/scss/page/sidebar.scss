@@ -37,3 +37,16 @@
   width: 331px;
   position: fixed;
 }
+
+.tabpane {
+  svg {
+    margin-right: 42px;
+  }
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 15px 53px;
+  font-size: 17px;
+  font-style: bold;
+  font-weight: 500;
+}

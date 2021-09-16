@@ -4,176 +4,226 @@ type CustomSVGProps = { selected: string }
 
 export const HomeSVG = ({ selected }: CustomSVGProps) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="33.333"
-      height="33.333"
-      viewBox="0 0 33.333 33.333"
+    <div
+      className="tabpane"
+      style={
+        selected === 'home'
+          ? { color: '#902fff', borderRight: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
     >
-      <g id="Group_631" data-name="Group 631" transform="translate(0 250)">
-        <g id="Group_629" data-name="Group 629" transform="translate(0 -250)">
-          <path
-            id="Path_691"
-            data-name="Path 691"
-            d="M0-250H33.333v33.333H0Z"
-            transform="translate(0 250)"
-            fill="none"
-          />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="33.333"
+        height="33.333"
+        viewBox="0 0 33.333 33.333"
+      >
+        <g id="Group_631" data-name="Group 631" transform="translate(0 250)">
+          <g id="Group_629" data-name="Group 629" transform="translate(0 -250)">
+            <path
+              id="Path_691"
+              data-name="Path 691"
+              d="M0-250H33.333v33.333H0Z"
+              transform="translate(0 250)"
+              fill="none"
+            />
+          </g>
+          <g
+            id="Group_630"
+            data-name="Group 630"
+            transform="translate(5.556 -245.833)"
+          >
+            <path
+              id="Path_692"
+              data-name="Path 692"
+              d="M56.778-212.278l8.333,6.25v12.5H48.445v-12.5l8.333-6.25m0-3.472-11.111,8.333v16.667H67.889v-16.667Zm3.832,22.222H52.946v-9.722H60.61Z"
+              transform="translate(-45.667 215.75)"
+              fill={selected === 'home' ? '#902fff' : '#a2a2c2'}
+            />
+          </g>
         </g>
-        <g
-          id="Group_630"
-          data-name="Group 630"
-          transform="translate(5.556 -245.833)"
-        >
-          <path
-            id="Path_692"
-            data-name="Path 692"
-            d="M56.778-212.278l8.333,6.25v12.5H48.445v-12.5l8.333-6.25m0-3.472-11.111,8.333v16.667H67.889v-16.667Zm3.832,22.222H52.946v-9.722H60.61Z"
-            transform="translate(-45.667 215.75)"
-            fill={selected === 'home' ? '#902fff' : '#a2a2c2'}
-          />
-        </g>
-      </g>
-    </svg>
+      </svg>
+      Home
+    </div>
   )
 }
 export const DiscoverSVG = ({ selected }: CustomSVGProps) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="23"
-      height="22.866"
-      viewBox="0 0 23 22.866"
+    <div
+      className="tabpane"
+      style={
+        selected === 'discover'
+          ? { color: '#902fff', borderRight: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
     >
-      <g
-        id="Group_13"
-        data-name="Group 13"
-        transform="translate(-381.547 -257.97)"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="23"
+        height="22.866"
+        viewBox="0 0 23 22.866"
       >
-        <path
-          id="Path_10"
-          data-name="Path 10"
-          d="M393.114,257.97a11.367,11.367,0,0,1,10.56,7.252c.215.578,1.039,1.5-.046,1.912a1.628,1.628,0,0,1-2.387-1.008,8.152,8.152,0,0,0-3.567-4.277c-.589-.36-1-.608-1.29.4a2.269,2.269,0,0,1-2.695,1.572c-1.253-.135-1.869.253-1.711,1.628s-.6,1.86-1.893,1.8c-.671-.031-1.467-.214-1.51.94-.039,1.044.543,1.17,1.34,1.135.777-.035,1,.45.926,1.093-.1.8.471,1.883-.411,2.35-1.016.538-1.58-.538-2.2-1.13-1.028-.978-2.007-2.007-3.021-3-.224-.219-.433-.664-.775-.508-.436.2-.369.72-.372,1.138a8.979,8.979,0,0,0,7.6,8.92c.565.1,1.259.013,1.445.854.309,1.4-.129,1.9-1.631,1.773-4.669-.386-9.235-4.867-9.832-9.651A11.493,11.493,0,0,1,393.114,257.97Z"
-          fill={selected === 'discover' ? '#902fff' : '#a2a2c2'}
-        />
-        <path
-          id="Path_11"
-          data-name="Path 11"
-          d="M417.637,295.053a4.886,4.886,0,0,1,3.016-4.719,5.182,5.182,0,0,1,7.166,6.123,2.076,2.076,0,0,0,.721,2.573,11.46,11.46,0,0,1,1.561,1.637,1.154,1.154,0,0,1-.14,1.662,1.091,1.091,0,0,1-1.548.04,17.626,17.626,0,0,1-1.847-1.752,1.8,1.8,0,0,0-2.207-.58A5.155,5.155,0,0,1,417.637,295.053Zm7.768-.041a2.384,2.384,0,0,0-2.582-2.526,2.606,2.606,0,0,0-2.688,2.652,2.843,2.843,0,0,0,2.673,2.617A2.606,2.606,0,0,0,425.405,295.012Z"
-          transform="translate(-25.843 -22.787)"
-          fill={selected === 'discover' ? '#902fff' : '#a2a2c2'}
-        />
-      </g>
-    </svg>
+        <g
+          id="Group_13"
+          data-name="Group 13"
+          transform="translate(-381.547 -257.97)"
+        >
+          <path
+            id="Path_10"
+            data-name="Path 10"
+            d="M393.114,257.97a11.367,11.367,0,0,1,10.56,7.252c.215.578,1.039,1.5-.046,1.912a1.628,1.628,0,0,1-2.387-1.008,8.152,8.152,0,0,0-3.567-4.277c-.589-.36-1-.608-1.29.4a2.269,2.269,0,0,1-2.695,1.572c-1.253-.135-1.869.253-1.711,1.628s-.6,1.86-1.893,1.8c-.671-.031-1.467-.214-1.51.94-.039,1.044.543,1.17,1.34,1.135.777-.035,1,.45.926,1.093-.1.8.471,1.883-.411,2.35-1.016.538-1.58-.538-2.2-1.13-1.028-.978-2.007-2.007-3.021-3-.224-.219-.433-.664-.775-.508-.436.2-.369.72-.372,1.138a8.979,8.979,0,0,0,7.6,8.92c.565.1,1.259.013,1.445.854.309,1.4-.129,1.9-1.631,1.773-4.669-.386-9.235-4.867-9.832-9.651A11.493,11.493,0,0,1,393.114,257.97Z"
+            fill={selected === 'discover' ? '#902fff' : '#a2a2c2'}
+          />
+          <path
+            id="Path_11"
+            data-name="Path 11"
+            d="M417.637,295.053a4.886,4.886,0,0,1,3.016-4.719,5.182,5.182,0,0,1,7.166,6.123,2.076,2.076,0,0,0,.721,2.573,11.46,11.46,0,0,1,1.561,1.637,1.154,1.154,0,0,1-.14,1.662,1.091,1.091,0,0,1-1.548.04,17.626,17.626,0,0,1-1.847-1.752,1.8,1.8,0,0,0-2.207-.58A5.155,5.155,0,0,1,417.637,295.053Zm7.768-.041a2.384,2.384,0,0,0-2.582-2.526,2.606,2.606,0,0,0-2.688,2.652,2.843,2.843,0,0,0,2.673,2.617A2.606,2.606,0,0,0,425.405,295.012Z"
+            transform="translate(-25.843 -22.787)"
+            fill={selected === 'discover' ? '#902fff' : '#a2a2c2'}
+          />
+        </g>
+      </svg>
+      Discover
+    </div>
   )
 }
 export const ActivitySVG = ({ selected }: CustomSVGProps) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="26.122"
-      height="26"
-      viewBox="0 0 26.122 26"
+    <div
+      className="tabpane"
+      style={
+        selected === 'activity'
+          ? { color: '#902fff', borderRight: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
     >
-      <g
-        id="Group_628"
-        data-name="Group 628"
-        transform="translate(0.122 109.324)"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="26.122"
+        height="26"
+        viewBox="0 0 26.122 26"
       >
-        <rect
-          id="Rectangle_66"
-          data-name="Rectangle 66"
-          width="26"
-          height="26"
-          transform="translate(0 -109.324)"
-          fill="none"
-        />
         <g
-          id="Group_627"
-          data-name="Group 627"
-          transform="translate(1.083 -106.834)"
+          id="Group_628"
+          data-name="Group 628"
+          transform="translate(0.122 109.324)"
         >
-          <path
-            id="Path_690"
-            data-name="Path 690"
-            d="M19.684-89.319l-2.231-1.018,2.231-1.018L20.7-93.586l1.018,2.231,2.231,1.018L21.72-89.319,20.7-87.089Zm-10.893,4.4,1.018-2.23,2.231-1.018L9.808-89.189,8.791-91.42,7.772-89.189l-2.23,1.018,2.23,1.018Zm4.873-5.414,1.18-2.61,2.61-1.18-2.61-1.18-1.18-2.61-1.18,2.61-2.61,1.18,2.61,1.18ZM9.332-77.884l6.5-6.508,4.331,4.331,9.2-10.352L27.838-91.94,20.16-83.31l-4.331-4.331L7.708-79.509Z"
-            transform="translate(-5.542 97.917)"
-            fill={selected === 'activity' ? '#902fff' : '#a2a2c2'}
-            stroke={selected === 'activity' ? '#902fff' : '#a2a2c2'}
-            strokeWidth="1"
+          <rect
+            id="Rectangle_66"
+            data-name="Rectangle 66"
+            width="26"
+            height="26"
+            transform="translate(0 -109.324)"
+            fill="none"
           />
+          <g
+            id="Group_627"
+            data-name="Group 627"
+            transform="translate(1.083 -106.834)"
+          >
+            <path
+              id="Path_690"
+              data-name="Path 690"
+              d="M19.684-89.319l-2.231-1.018,2.231-1.018L20.7-93.586l1.018,2.231,2.231,1.018L21.72-89.319,20.7-87.089Zm-10.893,4.4,1.018-2.23,2.231-1.018L9.808-89.189,8.791-91.42,7.772-89.189l-2.23,1.018,2.23,1.018Zm4.873-5.414,1.18-2.61,2.61-1.18-2.61-1.18-1.18-2.61-1.18,2.61-2.61,1.18,2.61,1.18ZM9.332-77.884l6.5-6.508,4.331,4.331,9.2-10.352L27.838-91.94,20.16-83.31l-4.331-4.331L7.708-79.509Z"
+              transform="translate(-5.542 97.917)"
+              fill={selected === 'activity' ? '#902fff' : '#a2a2c2'}
+              stroke={selected === 'activity' ? '#902fff' : '#a2a2c2'}
+              strokeWidth="1"
+            />
+          </g>
         </g>
-      </g>
-    </svg>
+      </svg>
+      Activity
+    </div>
   )
 }
 export const TradingSVG = ({ selected }: CustomSVGProps) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="23.3"
-      height="21.338"
-      viewBox="0 0 23.3 21.338"
+    <div
+      className="tabpane"
+      style={
+        selected === 'trading'
+          ? { color: '#902fff', borderRight: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
     >
-      <g
-        id="Group_12"
-        data-name="Group 12"
-        transform="translate(-385.634 -261.907)"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="23.3"
+        height="21.338"
+        viewBox="0 0 23.3 21.338"
       >
-        <path
-          id="Path_9"
-          data-name="Path 9"
-          d="M397.175,283.24c-2.829,0-5.659.015-8.488-.005-2.111-.015-3.032-.845-3.039-2.771q-.028-7.847,0-15.694c.006-2,.928-2.84,3.141-2.847q8.488-.028,16.976,0c2.166.009,3.142.9,3.152,2.875q.037,7.847,0,15.694c-.01,1.9-.971,2.729-3.091,2.743C402.94,283.254,400.057,283.24,397.175,283.24Zm-1.051-10.628c0,1.413-.013,2.827.005,4.24.009.686.25,1.336,1.109,1.363.886.027,1.162-.672,1.171-1.317q.061-4.312-.005-8.626a1.112,1.112,0,0,0-1.3-1.189c-.82.068-.975.668-.982,1.288C396.113,269.784,396.123,271.2,396.124,272.612Zm-5.11,1.688c0,.925-.029,1.851.011,2.774a1.1,1.1,0,0,0,1.012,1.147,1.018,1.018,0,0,0,1.174-.966,28.361,28.361,0,0,0,.027-5.681,1.051,1.051,0,0,0-1.175-.98,1,1,0,0,0-1.04,1.078C390.983,272.547,391.011,273.424,391.014,274.3Zm10.2,1.777c.144.824-.255,2.14,1.21,2.095,1.344-.041,1.112-1.3,1.15-2.2a2.213,2.213,0,0,0-.229-1.277,1.1,1.1,0,0,0-1.169-.576.92.92,0,0,0-.845.762A9.824,9.824,0,0,0,401.211,276.077Z"
-          fill={selected === 'trading' ? '#902fff' : '#a2a2c2'}
-        />
-      </g>
-    </svg>
+        <g
+          id="Group_12"
+          data-name="Group 12"
+          transform="translate(-385.634 -261.907)"
+        >
+          <path
+            id="Path_9"
+            data-name="Path 9"
+            d="M397.175,283.24c-2.829,0-5.659.015-8.488-.005-2.111-.015-3.032-.845-3.039-2.771q-.028-7.847,0-15.694c.006-2,.928-2.84,3.141-2.847q8.488-.028,16.976,0c2.166.009,3.142.9,3.152,2.875q.037,7.847,0,15.694c-.01,1.9-.971,2.729-3.091,2.743C402.94,283.254,400.057,283.24,397.175,283.24Zm-1.051-10.628c0,1.413-.013,2.827.005,4.24.009.686.25,1.336,1.109,1.363.886.027,1.162-.672,1.171-1.317q.061-4.312-.005-8.626a1.112,1.112,0,0,0-1.3-1.189c-.82.068-.975.668-.982,1.288C396.113,269.784,396.123,271.2,396.124,272.612Zm-5.11,1.688c0,.925-.029,1.851.011,2.774a1.1,1.1,0,0,0,1.012,1.147,1.018,1.018,0,0,0,1.174-.966,28.361,28.361,0,0,0,.027-5.681,1.051,1.051,0,0,0-1.175-.98,1,1,0,0,0-1.04,1.078C390.983,272.547,391.011,273.424,391.014,274.3Zm10.2,1.777c.144.824-.255,2.14,1.21,2.095,1.344-.041,1.112-1.3,1.15-2.2a2.213,2.213,0,0,0-.229-1.277,1.1,1.1,0,0,0-1.169-.576.92.92,0,0,0-.845.762A9.824,9.824,0,0,0,401.211,276.077Z"
+            fill={selected === 'trading' ? '#902fff' : '#a2a2c2'}
+          />
+        </g>
+      </svg>
+      Trading
+    </div>
   )
 }
 export const AboutSVG = ({ selected }: CustomSVGProps) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="28"
-      height="18"
-      viewBox="0 0 28 18"
+    <div
+      className="tabpane"
+      style={
+        selected === 'about'
+          ? { color: '#902fff', borderRight: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
     >
-      <g id="Group_15" data-name="Group 15" transform="translate(-57 -259)">
-        <g
-          id="Rectangle_5"
-          data-name="Rectangle 5"
-          transform="translate(57 259)"
-          fill="#fff"
-          stroke={selected === 'about' ? '#902fff' : '#a2a2c2'}
-          strokeWidth="2"
-        >
-          <rect width="28" height="4" rx="2" stroke="none" />
-          <rect x="1" y="1" width="26" height="2" rx="1" fill="none" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="18"
+        viewBox="0 0 28 18"
+      >
+        <g id="Group_15" data-name="Group 15" transform="translate(-57 -259)">
+          <g
+            id="Rectangle_5"
+            data-name="Rectangle 5"
+            transform="translate(57 259)"
+            fill="#fff"
+            stroke={selected === 'about' ? '#902fff' : '#a2a2c2'}
+            strokeWidth="2"
+          >
+            <rect width="28" height="4" rx="2" stroke="none" />
+            <rect x="1" y="1" width="26" height="2" rx="1" fill="none" />
+          </g>
+          <g
+            id="Rectangle_6"
+            data-name="Rectangle 6"
+            transform="translate(64 266)"
+            fill="#fff"
+            stroke={selected === 'about' ? '#902fff' : '#a2a2c2'}
+            strokeWidth="2"
+          >
+            <rect width="21" height="4" rx="2" stroke="none" />
+            <rect x="1" y="1" width="19" height="2" rx="1" fill="none" />
+          </g>
+          <g
+            id="Rectangle_7"
+            data-name="Rectangle 7"
+            transform="translate(64 273)"
+            fill="#fff"
+            stroke={selected === 'about' ? '#902fff' : '#a2a2c2'}
+            strokeWidth="2"
+          >
+            <rect width="21" height="4" rx="2" stroke="none" />
+            <rect x="1" y="1" width="19" height="2" rx="1" fill="none" />
+          </g>
         </g>
-        <g
-          id="Rectangle_6"
-          data-name="Rectangle 6"
-          transform="translate(64 266)"
-          fill="#fff"
-          stroke={selected === 'about' ? '#902fff' : '#a2a2c2'}
-          strokeWidth="2"
-        >
-          <rect width="21" height="4" rx="2" stroke="none" />
-          <rect x="1" y="1" width="19" height="2" rx="1" fill="none" />
-        </g>
-        <g
-          id="Rectangle_7"
-          data-name="Rectangle 7"
-          transform="translate(64 273)"
-          fill="#fff"
-          stroke={selected === 'about' ? '#902fff' : '#a2a2c2'}
-          strokeWidth="2"
-        >
-          <rect width="21" height="4" rx="2" stroke="none" />
-          <rect x="1" y="1" width="19" height="2" rx="1" fill="none" />
-        </g>
-      </g>
-    </svg>
+      </svg>
+      About
+    </div>
   )
 }
 export const OverviewSVG = ({ selected }: CustomSVGProps) => {
