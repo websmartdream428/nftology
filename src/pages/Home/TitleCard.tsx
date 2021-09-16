@@ -9,7 +9,7 @@ const TitleCard: React.FC = () => {
       <div className="d3Subtitle">{content.lorem}</div>
       <div className="d3Link">
         {content.discover}
-        <ArrowSVG />
+        <ArrowSVG selected="#fff" />
       </div>
     </div>
   )

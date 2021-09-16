@@ -6,7 +6,11 @@ const UpcomingCollectibles: React.FC = () => {
   return (
     <div className="cards_group">
       <div className="card_title">{content.upcom_collectible}</div>
-      <ImageCard />
+      <div className="card_image">
+        <ImageCard />
+        <ImageCard />
+        <ImageCard />
+      </div>
     </div>
   )
 }
