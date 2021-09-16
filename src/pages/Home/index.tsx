@@ -6,6 +6,10 @@ import CounterCard from './CounterCard'
 import TextCard from './TextCard'
 import CardText from './CardText'
 import UpcomingCollectibles from './UpcomingCollectibles'
+import FeaturedCreators from './FeaturedCreators'
+import TopCollectors from './TopCollectors'
+import PopularCollectibles from './PopularCollectibles'
+import FeaturedCollectibles from './FeaturedCollectibles'
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +20,10 @@ const Home: React.FC = () => {
       <CardText />
       <CounterCard />
       <UpcomingCollectibles />
+      <FeaturedCreators />
+      <TopCollectors />
+      <PopularCollectibles />
+      <FeaturedCollectibles />
     </div>
   )
 }

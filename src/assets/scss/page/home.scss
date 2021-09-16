@@ -115,6 +115,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
   // background-image: url('../../images/detailinfo.png');
 }
 
@@ -122,10 +123,49 @@
   font-size: 17px;
   font-family: 'Poppins';
   margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card_image {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.card_footer_side {
+  margin-top: 18px;
+  border-radius: 23px;
+  background-color: #330b7e;
+  padding: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miss_message {
+  color: $white-color;
+  font-size: 21px;
+}
+
+.email_input_div {
+  margin-left: 21px;
+}
+
+.email_input {
+  background-color: $white-color;
+  border-radius: 20px;
+}
+
+.child_card {
+  border-radius: 23px;
+  width: 32%;
+  height: 125px;
+  position: relative;
+}
+
+.more_text {
+  svg {
+    margin-left: 5px;
+  }
 }
