@@ -8,8 +8,10 @@ const TitleCard: React.FC = () => {
       <div className="d3Title">{content.d3dText}</div>
       <div className="d3Subtitle">{content.lorem}</div>
       <div className="d3Link">
-        {content.discover}
-        <ArrowSVG selected="#fff" />
+        <span style={{ cursor: 'pointer' }}>
+          {content.discover}
+          <ArrowSVG selected="#fff" />
+        </span>
       </div>
     </div>
   )

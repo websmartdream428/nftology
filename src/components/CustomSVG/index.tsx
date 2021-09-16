@@ -394,3 +394,27 @@ export const BellSVG = () => {
     </svg>
   )
 }
+
+export const SearchIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18.015"
+      height="18.015"
+      viewBox="0 0 18.015 18.015"
+    >
+      <g
+        id="fi-rr-search_1"
+        data-name="fi-rr-search 1"
+        transform="translate(0.024 0.024)"
+      >
+        <path
+          id="Vector"
+          d="M17.8,16.744l-4.477-4.477a7.512,7.512,0,1,0-1.061,1.061L16.744,17.8A.75.75,0,0,0,17.8,16.744Zm-10.28-3.22a6.007,6.007,0,1,1,4.241-1.759A6,6,0,0,1,7.524,13.524Z"
+          transform="translate(-0.024 -0.024)"
+          fill="#902fff"
+        />
+      </g>
+    </svg>
+  )
+}

@@ -23,6 +23,7 @@ const Button = ({
       type="button"
       onClick={onClick}
       style={{
+        cursor: 'pointer',
         backgroundColor: color,
         border,
         borderRadius: radius,

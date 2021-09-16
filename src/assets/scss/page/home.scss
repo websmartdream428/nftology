@@ -150,11 +150,21 @@
 
 .email_input_div {
   margin-left: 21px;
+  padding-right: 24px;
+  background-color: #f5f5fb;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .email_input {
-  background-color: $white-color;
+  background-color: #f5f5fb;
   border-radius: 20px;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
 }
 
 .child_card {
@@ -165,6 +175,7 @@
 }
 
 .more_text {
+  cursor: pointer;
   svg {
     margin-left: 5px;
   }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { ArrowSVG } from '../../components/CustomSVG'
 import ImageCard from '../../components/ImageCard'
 import content from '../../constant/en.json'
 
@@ -14,7 +15,12 @@ const UpcomingCollectibles: React.FC = () => {
       <div className="card_footer_side">
         <div className="miss_message">{content.miss_nessage}</div>
         <div className="email_input_div">
-          <input className="email_input" placeholder="email" />
+          <div>
+            <input className="email_input" placeholder="email" />
+          </div>
+          <div>
+            <ArrowSVG selected="#000" />
+          </div>
         </div>
       </div>
     </div>

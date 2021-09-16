@@ -9,5 +9,35 @@
 .header_bar {
   text-align: right;
   padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding-bottom: 48px;
+  justify-content: flex-end;
+}
+
+.search_input_div {
+  margin-right: 20px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e9fa;
+  border-radius: 10px;
+  // width: 200px;
+}
+
+.search_input {
+  border: none;
+  padding: 14px 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #e5e9fa;
+  outline: none;
+}
+
+.sign_in {
+  cursor: pointer;
 }
