@@ -1,5 +1,6 @@
 import React from 'react'
 import ImageCard from '../../components/ImageCard'
+// import Slider from 'react-slick'
 import content from '../../constant/en.json'
 import {
   CardImageSlider,

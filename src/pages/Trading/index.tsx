@@ -1,8 +1,11 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { tabledata } from '../../constant/tabledata'
-import Button from '../../components/CustomButton'
-import CustomHeader from '../../components/CustomHeader'
+import {
+  HistoryTabledata,
+  SecTabledata,
+  BuyTabledata,
+} from '../../constant/tabledata'
+import { BuyColumn, HistoryColumn, SecColumn } from '../../constant/tablecolumn'
 import Table from '../../components/CustomTable'
 import { PageContainter } from '../../styledComponents/layout/StyledMainLayout'
 import { WhiteCard } from '../../styledComponents/elements/Cards'
@@ -11,6 +14,7 @@ import {
   TableDescDiv,
   DescTitle,
   DescContent,
+  DescSubtitle,
 } from '../../styledComponents/pages/activity/StyledTrading'
 import {
   SearchDiv,
@@ -20,51 +24,11 @@ import { SearchIcon } from '../../components/CustomSVG'
 import content from '../../constant/en.json'
 
 const TableDiv = styled.div`
+  margin-top: 50px;
   width: 100%;
 `
 
-type CellProps = {
-  cell: any
-}
-
 export default function App() {
-  const columns = React.useMemo(
-    () => [
-      {
-        Header: <CustomHeader title="Collectible" />,
-        accessor: 'collect',
-      },
-      {
-        Header: <CustomHeader title="ASK(USD)" />,
-        accessor: 'ask',
-      },
-      {
-        Header: <CustomHeader title="Shares" />,
-        accessor: 'shares',
-      },
-      {
-        Header: <CustomHeader title="Total(USD)" />,
-        accessor: 'total',
-      },
-      {
-        Header: '',
-        accessor: 'name',
-        Cell: ({ cell }: CellProps) => (
-          <Button
-            border="none"
-            color="#E5E9FA"
-            height="54px"
-            onClick={() => console.log(cell)}
-            radius="12px"
-            width="219px"
-            value="Buy/Counter"
-          />
-        ),
-      },
-    ],
-    []
-  )
-
   return (
     <PageContainter>
       <WhiteCard>
@@ -82,8 +46,54 @@ export default function App() {
           </SearchDiv>
         </TableDescDiv>
         <TableDiv>
-          <Table columns={columns} data={tabledata} />
+          <Table columns={BuyColumn} data={BuyTabledata} />
         </TableDiv>
+      </WhiteCard>
+
+      <WhiteCard>
+        <TableDescDiv>
+          <TableDesc>
+            <DescTitle>History of Direct Transactions</DescTitle>
+          </TableDesc>
+          <SearchDiv>
+            <SearchInput
+              style={{ width: '200px' }}
+              placeholder="Search Collectibles"
+            />
+            <SearchIcon />
+          </SearchDiv>
+        </TableDescDiv>
+        <TableDiv>
+          <Table columns={HistoryColumn} data={HistoryTabledata} />
+        </TableDiv>
+      </WhiteCard>
+
+      <WhiteCard>
+        <TableDescDiv>
+          <TableDesc>
+            <DescTitle>SEC Filings</DescTitle>
+            <DescContent>{content.table_sec_description}</DescContent>
+          </TableDesc>
+          <SearchDiv>
+            <SearchInput
+              style={{ width: '200px' }}
+              placeholder="Search Collectibles"
+            />
+            <SearchIcon />
+          </SearchDiv>
+        </TableDescDiv>
+        <TableDiv>
+          <Table columns={SecColumn} data={SecTabledata} />
+        </TableDiv>
+      </WhiteCard>
+
+      <WhiteCard>
+        <TableDescDiv>
+          <TableDesc>
+            <DescTitle>Risk Of Investing</DescTitle>
+            <DescSubtitle>{content.risk_description}</DescSubtitle>
+          </TableDesc>
+        </TableDescDiv>
       </WhiteCard>
     </PageContainter>
   )

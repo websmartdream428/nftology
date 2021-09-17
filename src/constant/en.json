@@ -22,5 +22,7 @@
   "popular_collectible": "Popular Collectibles",
   "feature_collectible": "Featured Collectibles",
   "foot_text": "© 2021 NFTology. All rights reserved.",
-  "table_description": "Buy shares or counter below the asking price by clicking 'respond' on any of the offers below. Currently, the secondary market is only available to US citizens with US bank accounts. Shares held by an individual or joint account are eligible to be traded."
+  "table_description": "Buy shares or counter below the asking price by clicking 'respond' on any of the offers below. Currently, the secondary market is only available to US citizens with US bank accounts. Shares held by an individual or joint account are eligible to be traded.",
+  "table_sec_description": "We file documents with the SEC which can be obtained on www.sec.gov — you should carefully review the information contained in the offering document relating to a particular offering before investing.",
+  "risk_description": "Investing involves a number of significant risks and uncertainties. Please click here for a summary discussion  of risk factors you should consider prior to investing. Please also review the 'Risk Factors' section of our latest  SEC filings prior to investing."
 }

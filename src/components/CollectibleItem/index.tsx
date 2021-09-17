@@ -12,10 +12,10 @@ const CollectImage = styled.img`
 const CollectName = styled.span`
   font-size: 16px;
   margin-left: 17px;
-  font-color: #111026;
+  color: #111026;
 `
 const ArtName = styled.span`
-  font-color: #a2a2c2;
+  color: #a2a2c2;
 `
 
 type CollectibleItemProps = {

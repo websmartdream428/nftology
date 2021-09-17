@@ -4,7 +4,6 @@ export const TableDescDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 50px;
 `
 
 export const TableDesc = styled.div`
@@ -14,12 +13,21 @@ export const TableDesc = styled.div`
 `
 
 export const DescTitle = styled.div`
+  font-style: bold;
+  font-weight: 600;
   color: #111026;
   font-size: 17px;
   margin-bottom: 20px;
 `
 
+export const DescSubtitle = styled.div`
+  font-style: bold;
+  font-weight: 300;
+  color: #111026;
+  font-size: 15px;
+`
+
 export const DescContent = styled.div`
   color: #a2a2c2;
-  font-size: 12px;
+  font-size: 15px;
 `

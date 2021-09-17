@@ -4,14 +4,18 @@ import { useTable } from 'react-table'
 
 const StyledTable = styled.table`
   width: 100%;
+  thead {
+    th {
+      padding: 10px 20px 10px 20px;
+    }
+  }
   tbody {
     td {
-      width: 100%;
       border-collapse: collapse;
       border-bottom: 1px solid #000000;
-      padding-bottom: 10px;
-      padding-top: 20px;
       text-align: center;
+      padding-top: 20px;
+      padding-bottom: 10px;
     }
   }
 `
