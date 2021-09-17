@@ -22,6 +22,7 @@ export const SearchDiv = styled.div`
   align-items: center;
   background-color: #e5e9fa;
   border-radius: 10px;
+  height: 50px;
 `
 
 export const SearchInput = styled.input`

@@ -4,8 +4,33 @@ import { useTable } from 'react-table'
 import { tabledata } from '../../constant/tabledata'
 import Button from '../../components/CustomButton'
 import CustomHeader from '../../components/CustomHeader'
+import { PageContainter } from '../../styledComponents/layout/StyledMainLayout'
+import { WhiteCard } from '../../styledComponents/elements/Cards'
+import {
+  TableDesc,
+  TableDescDiv,
+  DescTitle,
+  DescContent,
+} from '../../styledComponents/pages/activity/StyledTrading'
+import {
+  SearchDiv,
+  SearchInput,
+} from '../../styledComponents/layout/StyledHeader'
+import { SearchIcon } from '../../components/CustomSVG'
+import content from '../../constant/en.json'
 
-const StyledTable = styled.div``
+const TableDiv = styled.div`
+  width: 100%;
+`
+
+const StyledTable = styled.table`
+  width: 100%;
+  tbody {
+    tr {
+      border-bottom: 1px solid #000000;
+    }
+  }
+`
 
 type TableProps = {
   columns: any
@@ -26,7 +51,7 @@ function Table({ columns, data }: TableProps) {
     data,
   })
   return (
-    <table {...getTableProps()}>
+    <StyledTable {...getTableProps()}>
       <thead>
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>
@@ -48,7 +73,7 @@ function Table({ columns, data }: TableProps) {
           )
         })}
       </tbody>
-    </table>
+    </StyledTable>
   )
 }
 export default function App() {
@@ -90,8 +115,29 @@ export default function App() {
   )
 
   return (
-    <StyledTable>
-      <Table columns={columns} data={tabledata} />
-    </StyledTable>
+    <PageContainter>
+      <WhiteCard>
+        <TableDescDiv>
+          <TableDesc>
+            <DescTitle>Buy Shares</DescTitle>
+            <DescContent>{content.table_description}</DescContent>
+          </TableDesc>
+          <SearchDiv>
+            <div>
+              <SearchInput
+                style={{ width: '200px' }}
+                placeholder="Search Collectibles"
+              />
+            </div>
+            <div>
+              <SearchIcon />
+            </div>
+          </SearchDiv>
+        </TableDescDiv>
+        <TableDiv>
+          <Table columns={columns} data={tabledata} />
+        </TableDiv>
+      </WhiteCard>
+    </PageContainter>
   )
 }
