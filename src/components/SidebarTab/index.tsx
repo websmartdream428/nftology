@@ -31,7 +31,7 @@ const SidebarTab: React.FC = () => {
         <DiscoverSVG selected={selected} />
       </Link>
       <Link
-        to="/home"
+        to="/activity"
         style={{ textDecoration: 'none' }}
         onClick={() => {
           setSelected('activity')

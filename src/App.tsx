@@ -8,6 +8,7 @@ import MainLayout from './layout/MainLayout'
 // @import page
 const Home = React.lazy(() => import('./pages/Home'))
 const Discover = React.lazy(() => import('./pages/Discover'))
+const Activity = React.lazy(() => import('./pages/Activity'))
 const Trading = React.lazy(() => import('./pages/Trading'))
 
 const AppContainer = styled.div`
@@ -37,6 +38,14 @@ const App: React.FC = () => {
               render={() => (
                 <MainLayout>
                   <Discover />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/activity"
+              render={() => (
+                <MainLayout>
+                  <Activity />
                 </MainLayout>
               )}
             />
