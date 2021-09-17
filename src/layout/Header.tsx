@@ -1,26 +1,24 @@
 import React from 'react'
-import '../assets/scss/page/headerbar.scss'
 import { ArrowSVG, SearchIcon } from '../components/CustomSVG'
 import content from '../constant/en.json'
 
+import * as Styled from '../styledComponents/layout/StyledHeader'
+
 const Header: React.FC = () => {
   return (
-    <div className="header_bar">
-      <div className="search_input_div">
+    <Styled.HeaderBar>
+      <Styled.SearchDiv>
         <div>
-          <input
-            className="search_input"
-            placeholder={content.search_placeholder}
-          />
+          <Styled.SearchInput placeholder={content.search_placeholder} />
         </div>
         <div>
           <SearchIcon />
         </div>
-      </div>
-      <div className="sign_in">
+      </Styled.SearchDiv>
+      <Styled.SignInDiv>
         Sign in <ArrowSVG selected="#000" />
-      </div>
-    </div>
+      </Styled.SignInDiv>
+    </Styled.HeaderBar>
   )
 }
 

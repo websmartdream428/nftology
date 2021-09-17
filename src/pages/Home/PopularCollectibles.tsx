@@ -1,17 +1,22 @@
 import React from 'react'
 import ImageCard from '../../components/ImageCard'
 import content from '../../constant/en.json'
+import {
+  CardImageSlider,
+  CardTitle,
+  WhiteCard,
+} from '../../styledComponents/elements/Cards'
 
 const PopularCollectibles: React.FC = () => {
   return (
-    <div className="cards_group">
-      <div className="card_title">{content.popular_collectible}</div>
-      <div className="card_image">
+    <WhiteCard>
+      <CardTitle>{content.feature_collectible}</CardTitle>
+      <CardImageSlider>
         <ImageCard timeFlag={false} isBell={false} />
         <ImageCard timeFlag={false} isBell={false} />
         <ImageCard timeFlag={false} isBell={false} />
-      </div>
-    </div>
+      </CardImageSlider>
+    </WhiteCard>
   )
 }
 

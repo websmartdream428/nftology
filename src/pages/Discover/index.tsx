@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 const Discover: React.FC = () => {
   return (
-    <Fragment>
+    <div className="page-container">
       <h1>Discover</h1>
-    </Fragment>
+    </div>
   )
 }
 

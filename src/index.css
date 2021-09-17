@@ -21,3 +21,11 @@ code {
   display: flex;
   justify-content: space-between;
 }
+
+* {
+  box-sizing: border-box !important;
+}
+
+* {
+  word-wrap: break-word;
+}

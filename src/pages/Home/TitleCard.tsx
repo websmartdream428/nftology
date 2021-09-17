@@ -2,18 +2,20 @@ import React from 'react'
 import content from '../../constant/en.json'
 import { ArrowSVG } from '../../components/CustomSVG'
 
+import * as Styled from '../../styledComponents/pages/home/StyledTitleCard'
+
 const TitleCard: React.FC = () => {
   return (
-    <div className="title_card">
-      <div className="d3Title">{content.d3dText}</div>
-      <div className="d3Subtitle">{content.lorem}</div>
-      <div className="d3Link">
-        <span style={{ cursor: 'pointer' }}>
+    <Styled.TitleCardDiv>
+      <Styled.D3Title>{content.d3dText}</Styled.D3Title>
+      <Styled.D3Subtitle>{content.lorem}</Styled.D3Subtitle>
+      <Styled.D3Link>
+        <Styled.CursorSpan>
           {content.discover}
           <ArrowSVG selected="#fff" />
-        </span>
-      </div>
-    </div>
+        </Styled.CursorSpan>
+      </Styled.D3Link>
+    </Styled.TitleCardDiv>
   )
 }
 

@@ -1,22 +1,31 @@
 import React from 'react'
 import content from '../../constant/en.json'
+import { NoColorCard } from '../../styledComponents/elements/Cards'
+import {
+  CounterCardGroup,
+  CounterCardDiv,
+  CounterNumber,
+  CounterDesc,
+} from '../../styledComponents/pages/home/StyledCountCard'
 
 const CounterCard: React.FC = () => {
   return (
-    <div className="counter_card_group">
-      <div className="counter_card">
-        <div className="count_number">50+</div>
-        <div className="count_description">{content.total_origin}</div>
-      </div>
-      <div className="counter_card">
-        <div className="count_number">140K+</div>
-        <div className="count_description">{content.total_origin}</div>
-      </div>
-      <div className="counter_card">
-        <div className="count_number">$150M+</div>
-        <div className="count_description">{content.total_origin}</div>
-      </div>
-    </div>
+    <NoColorCard>
+      <CounterCardGroup>
+        <CounterCardDiv>
+          <CounterNumber>50+</CounterNumber>
+          <CounterDesc>{content.total_origin}</CounterDesc>
+        </CounterCardDiv>
+        <CounterCardDiv>
+          <CounterNumber>140K+</CounterNumber>
+          <CounterDesc>{content.register_number}</CounterDesc>
+        </CounterCardDiv>
+        <CounterCardDiv>
+          <CounterNumber>$150M+</CounterNumber>
+          <CounterDesc>{content.securitized}</CounterDesc>
+        </CounterCardDiv>
+      </CounterCardGroup>
+    </NoColorCard>
   )
 }
 

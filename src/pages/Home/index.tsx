@@ -1,6 +1,6 @@
 import React from 'react'
+import styled from 'styled-components'
 import '../../assets/scss/page/home.scss'
-import Header from '../../layout/Header'
 import TitleCard from './TitleCard'
 import CounterCard from './CounterCard'
 import TextCard from './TextCard'
@@ -11,10 +11,15 @@ import TopCollectors from './TopCollectors'
 import PopularCollectibles from './PopularCollectibles'
 import FeaturedCollectibles from './FeaturedCollectibles'
 
+const PageContainter = styled.div`
+  margin: auto;
+  width: 80%;
+  margin-top: 136px;
+`
+
 const Home: React.FC = () => {
   return (
-    <div className="page-container">
-      <Header />
+    <PageContainter>
       <TitleCard />
       <TextCard />
       <CardText />
@@ -24,7 +29,7 @@ const Home: React.FC = () => {
       <TopCollectors />
       <PopularCollectibles />
       <FeaturedCollectibles />
-    </div>
+    </PageContainter>
   )
 }
 

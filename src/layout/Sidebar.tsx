@@ -1,21 +1,20 @@
 import React from 'react'
 import logo from '../assets/images/Logo.png'
 import Button from '../components/CustomButton'
-
-import '../assets/scss/page/sidebar.scss'
-
 import SidebarTab from '../components/SidebarTab'
+
+import * as Styled from '../styledComponents/layout/StyledSideBar'
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="sidebar">
-      <div className="logo-div">
-        <img className="logo-image" src={logo} alt="logo" />
-      </div>
-      <div className="sidebar_tab">
+    <Styled.SideBarDiv>
+      <Styled.SibeBarLogo>
+        <Styled.LogoImg src={logo} alt="logo" />
+      </Styled.SibeBarLogo>
+      <Styled.SideBarTab>
         <SidebarTab />
-      </div>
-      <div className="sidebar_btn">
+      </Styled.SideBarTab>
+      <Styled.SideBarButton>
         <Button
           border="none"
           color="#E5E9FA"
@@ -25,8 +24,8 @@ const Sidebar: React.FC = () => {
           width="219px"
           value="Connect Wallet"
         />
-      </div>
-    </div>
+      </Styled.SideBarButton>
+    </Styled.SideBarDiv>
   )
 }
 

@@ -1,11 +1,11 @@
 import React from 'react'
+import { TabPane } from '../../styledComponents/layout/StyledSideBar'
 
 type CustomSVGProps = { selected: string }
 
 export const HomeSVG = ({ selected }: CustomSVGProps) => {
   return (
-    <div
-      className="tabpane"
+    <TabPane
       style={
         selected === 'home'
           ? { color: '#902fff', borderRight: '3px solid #902fff' }
@@ -44,13 +44,12 @@ export const HomeSVG = ({ selected }: CustomSVGProps) => {
         </g>
       </svg>
       Home
-    </div>
+    </TabPane>
   )
 }
 export const DiscoverSVG = ({ selected }: CustomSVGProps) => {
   return (
-    <div
-      className="tabpane"
+    <TabPane
       style={
         selected === 'discover'
           ? { color: '#902fff', borderRight: '3px solid #902fff' }
@@ -84,13 +83,12 @@ export const DiscoverSVG = ({ selected }: CustomSVGProps) => {
         </g>
       </svg>
       Discover
-    </div>
+    </TabPane>
   )
 }
 export const ActivitySVG = ({ selected }: CustomSVGProps) => {
   return (
-    <div
-      className="tabpane"
+    <TabPane
       style={
         selected === 'activity'
           ? { color: '#902fff', borderRight: '3px solid #902fff' }
@@ -134,13 +132,12 @@ export const ActivitySVG = ({ selected }: CustomSVGProps) => {
         </g>
       </svg>
       Activity
-    </div>
+    </TabPane>
   )
 }
 export const TradingSVG = ({ selected }: CustomSVGProps) => {
   return (
-    <div
-      className="tabpane"
+    <TabPane
       style={
         selected === 'trading'
           ? { color: '#902fff', borderRight: '3px solid #902fff' }
@@ -167,13 +164,12 @@ export const TradingSVG = ({ selected }: CustomSVGProps) => {
         </g>
       </svg>
       Trading
-    </div>
+    </TabPane>
   )
 }
 export const AboutSVG = ({ selected }: CustomSVGProps) => {
   return (
-    <div
-      className="tabpane"
+    <TabPane
       style={
         selected === 'about'
           ? { color: '#902fff', borderRight: '3px solid #902fff' }
@@ -223,7 +219,7 @@ export const AboutSVG = ({ selected }: CustomSVGProps) => {
         </g>
       </svg>
       About
-    </div>
+    </TabPane>
   )
 }
 export const OverviewSVG = ({ selected }: CustomSVGProps) => {

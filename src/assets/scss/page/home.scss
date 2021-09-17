@@ -5,49 +5,12 @@
 @import '../colors';
 @import '../fonts';
 @import '../reset';
-.title_card {
-  background-color: $color-3d;
-  border-color: #707070;
-  border-radius: 12px;
-  padding: 27px 22px 17px 69px;
-  color: $white-color;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 60px;
-}
-
-.d3Title {
-  font-size: 59px;
-  font-style: bold;
-  font-family: 'Poppins';
-  font-weight: 1000;
-}
-
-.d3Subtitle {
-  font-size: 18px;
-}
-
-.d3Link {
-  text-align: right;
-  font-size: 17px;
-  svg {
-    margin-left: 9px;
-  }
-}
 
 .text_card_group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 60px;
-}
-
-.card-chart {
-  width: 50%;
-  height: 397px;
-  box-shadow: 0px 30px 60px #0000000f;
-  background-color: $white-color;
-  border-radius: 52px;
 }
 
 .card-show {
@@ -58,66 +21,47 @@
   border-radius: 52px;
 }
 
-.card-text {
-  width: 47%;
-}
-
-.card_txt_title {
-  font-size: $text-lg;
-  font-family: 'Poppins';
-  color: #330b7e;
-  font-weight: 600;
-}
-
-.card_txt_content {
-  svg {
-    margin-right: 6px;
-  }
-  font-size: 20px;
-}
-
-.card_txt_footer {
-  margin-top: 14px;
-}
-
 .counter_card_group {
   margin-top: 60px;
   margin-bottom: 60px;
   display: flex;
   text-align: center;
   justify-content: center;
+  & > *:not(:first-child) {
+    margin-left: -20px;
+  }
 }
 
 .counter_card {
-  padding: 15px 55px 35px 55px;
+  padding: 15px 40px 35px 40px;
   border-radius: 138px;
   background-color: #e5e9fa;
   box-shadow: 0px 30px 60px #00000073;
 }
 
 .count_number {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 700;
   font-family: 'Poppins';
   color: #350098;
 }
 
 .count_description {
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Poppins';
   color: #350098;
 }
 
-.cards_group {
-  padding: 31px;
-  border-radius: 17px;
-  background-color: #fdfdfe;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 60px;
-  // background-image: url('../../images/detailinfo.png');
-}
+// .cards_group {
+//   padding: 31px;
+//   border-radius: 17px;
+//   background-color: #fdfdfe;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: 60px;
+//   // background-image: url('../../images/detailinfo.png');
+// }
 
 .card_title {
   font-size: 17px;

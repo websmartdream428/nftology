@@ -1,28 +1,54 @@
 import React from 'react'
+import styled from 'styled-components'
 import content from '../../constant/en.json'
 import Button from '../../components/CustomButton'
-import ShowCard from './ChartCard'
+import ShowCard from './ShowCard'
+import { NoColorCard, GridRowCard } from '../../styledComponents/elements/Cards'
+
+const TextDiv = styled.div`
+  widt: 100%;
+`
+
+const TextTitle = styled.div`
+  font-size: 38.4px;
+  font-family: 'Poppins';
+  color: #330b7e;
+  font-weight: 600;
+`
+
+const TextContent = styled.div`
+  svg {
+    margin-right: 6px;
+  }
+  font-size: 20px;
+`
+
+const TextFooter = styled.div`
+  margin-top: 14px;
+`
 
 const TextCard: React.FC = () => {
   return (
-    <div className="text_card_group">
-      <ShowCard />
-      <div className="card-text pt-3" dir="rtl">
-        <div className="card_txt_title">{content.consectetur}</div>
-        <div className="card_txt_content">{content.consect_sub_text}</div>
-        <div className="card_txt_footer">
-          <Button
-            border="none"
-            color="#E5E9FA"
-            height="54px"
-            onClick={() => console.log('You clicked on the pink circle!')}
-            radius="12px"
-            width="219px"
-            value={content.secondary}
-          />
-        </div>
-      </div>
-    </div>
+    <NoColorCard>
+      <GridRowCard>
+        <ShowCard />
+        <TextDiv dir="rtl">
+          <TextTitle>{content.consectetur}</TextTitle>
+          <TextContent>{content.consect_sub_text}</TextContent>
+          <TextFooter>
+            <Button
+              border="none"
+              color="#E5E9FA"
+              height="54px"
+              onClick={() => console.log('You clicked on the pink circle!')}
+              radius="12px"
+              width="219px"
+              value={content.secondary}
+            />
+          </TextFooter>
+        </TextDiv>
+      </GridRowCard>
+    </NoColorCard>
   )
 }
 

@@ -2,51 +2,54 @@ import React from 'react'
 import AvatarCard from '../../components/AvatarCard'
 import { ArrowSVG } from '../../components/CustomSVG'
 import content from '../../constant/en.json'
+import {
+  CardContainer,
+  CardTitle,
+  ChildCard,
+  MoreText,
+  WhiteCard,
+} from '../../styledComponents/elements/Cards'
 
 const FeaturedCreators: React.FC = () => {
   return (
-    <div className="cards_group">
-      <div className="card_title">
+    <WhiteCard>
+      <CardTitle>
         <div>{content.featured}</div>
-        <div className="more_text">
+        <MoreText>
           More
           <ArrowSVG selected="#000" />
-        </div>
-      </div>
-      <div className="card_image">
-        <div className="child_card">
+        </MoreText>
+      </CardTitle>
+      <CardContainer>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-        <div className="child_card">
+        </ChildCard>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-        <div className="child_card">
+        </ChildCard>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-      </div>
-      <div className="card_image">
-        <div className="child_card">
+        </ChildCard>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-        <div className="child_card">
+        </ChildCard>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-        <div className="child_card">
+        </ChildCard>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-      </div>
-      <div className="card_image">
-        <div className="child_card">
+        </ChildCard>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-        <div className="child_card">
+        </ChildCard>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-        <div className="child_card">
+        </ChildCard>
+        <ChildCard>
           <AvatarCard isBell={false} />
-        </div>
-      </div>
-    </div>
+        </ChildCard>
+      </CardContainer>
+    </WhiteCard>
   )
 }
 

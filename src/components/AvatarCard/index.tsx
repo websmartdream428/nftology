@@ -1,6 +1,5 @@
 import React from 'react'
 import '../ImageCard/imageCard.scss'
-// import CardImage from '../../assets/images/common.png'
 import avatar from '../../assets/images/Ellipse 1.png'
 import { ArrowSVG, BellSVG } from '../CustomSVG'
 

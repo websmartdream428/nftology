@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
-@import '../margin_padding_helper_mixin';
-@import '../spacing';
-@import '../helper';
-@import '../colors';
-@import '../fonts';
-@import '../reset';
+import styled from 'styled-components'
 
-.header_bar {
+export const HeaderBar = styled.div`
+  position: fixed;
   text-align: right;
   padding-top: 40px;
   display: flex;
@@ -14,9 +9,11 @@
   align-items: center;
   padding-bottom: 48px;
   justify-content: flex-end;
-}
+  right: 30px;
+  z-index: 1;
+`
 
-.search_input_div {
+export const SearchDiv = styled.div`
   margin-right: 20px;
   padding-right: 15px;
   display: flex;
@@ -25,10 +22,9 @@
   align-items: center;
   background-color: #e5e9fa;
   border-radius: 10px;
-  // width: 200px;
-}
+`
 
-.search_input {
+export const SearchInput = styled.input`
   border: none;
   padding: 14px 15px;
   border-radius: 10px;
@@ -36,8 +32,8 @@
   font-weight: 500;
   background-color: #e5e9fa;
   outline: none;
-}
+`
 
-.sign_in {
+export const SignInDiv = styled.div`
   cursor: pointer;
-}
+`
