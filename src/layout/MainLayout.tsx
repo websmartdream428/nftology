@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Userbar from './Userbar'
 import Sidebar from './Sidebar'
 import Header from './Header'
+import Footer from './Footer'
 
 import {
   MainContainer,
@@ -31,6 +32,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
       <MainContent isAuthenticate={isAuthenticate}>
         <Header />
         {children}
+        <Footer />
       </MainContent>
       {isAuthenticate && <Userbar />}
     </MainContainer>

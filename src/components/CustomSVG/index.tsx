@@ -464,3 +464,38 @@ export const SearchIcon = () => {
     </svg>
   )
 }
+export const FilterUp = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="9.514"
+      height="8.834"
+      viewBox="0 0 9.514 8.834"
+    >
+      <path
+        id="Path_682"
+        data-name="Path 682"
+        d="M4.757,0,9.514,8.834H0Z"
+        fill="#330b7e"
+      />
+    </svg>
+  )
+}
+export const FilterDown = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="9.514"
+      height="8.834"
+      viewBox="0 0 9.514 8.834"
+    >
+      <path
+        id="Polygon_41"
+        data-name="Polygon 41"
+        d="M4.757,0,9.514,8.834H0Z"
+        transform="translate(9.514 8.834) rotate(180)"
+        fill="#330b7e"
+      />
+    </svg>
+  )
+}

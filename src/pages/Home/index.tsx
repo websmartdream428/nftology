@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import '../../assets/scss/page/home.scss'
 import TitleCard from './TitleCard'
 import CounterCard from './CounterCard'
 import TextCard from './TextCard'

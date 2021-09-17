@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-// import "../assets/scss/page/userbar.scss"
 import {
   HomeSVG,
   DiscoverSVG,
@@ -41,7 +40,7 @@ const SidebarTab: React.FC = () => {
         <ActivitySVG selected={selected} />
       </Link>
       <Link
-        to="/discover"
+        to="/trading"
         style={{ textDecoration: 'none' }}
         onClick={() => {
           setSelected('trading')
