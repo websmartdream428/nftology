@@ -9,7 +9,7 @@ import {
 } from '../CustomSVG'
 
 const SidebarTab: React.FC = () => {
-  const [selected, setSelected] = useState('discover')
+  const [selected, setSelected] = useState('home')
   return (
     <div>
       <Link

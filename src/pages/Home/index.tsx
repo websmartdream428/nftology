@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import TitleCard from './TitleCard'
 import CounterCard from './CounterCard'
 import TextCard from './TextCard'
@@ -9,12 +8,7 @@ import FeaturedCreators from './FeaturedCreators'
 import TopCollectors from './TopCollectors'
 import PopularCollectibles from './PopularCollectibles'
 import FeaturedCollectibles from './FeaturedCollectibles'
-
-const PageContainter = styled.div`
-  margin: auto;
-  width: 80%;
-  margin-top: 136px;
-`
+import { PageContainter } from '../../styledComponents/layout/StyledMainLayout'
 
 const Home: React.FC = () => {
   return (

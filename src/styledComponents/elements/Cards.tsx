@@ -28,9 +28,9 @@ export const CardTitle = styled.div`
 `
 
 export const CardImageSlider = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-column-gap: 2%;
 `
 
 export const MoreText = styled.div`

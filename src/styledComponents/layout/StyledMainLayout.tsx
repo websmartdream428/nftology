@@ -17,3 +17,9 @@ export const MainContent = styled.div<MainContentProps>`
       ? 'width: calc(100vw - (331px * 2));'
       : 'width: calc(100vw - 331px);'}
 `
+
+export const PageContainter = styled.div`
+  margin: auto;
+  width: 80%;
+  margin-top: 136px;
+`

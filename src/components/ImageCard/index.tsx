@@ -8,7 +8,7 @@ type CustomProps = { timeFlag: boolean; isBell: boolean }
 
 const ImageCardDiv = styled.div`
   border-radius: 23px;
-  width: 32%;
+  width: 100%;
   height: 350px;
   position: relative;
   background-size: cover;
