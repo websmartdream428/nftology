@@ -24,5 +24,22 @@
   "foot_text": "© 2021 NFTology. All rights reserved.",
   "table_description": "Buy shares or counter below the asking price by clicking 'respond' on any of the offers below. Currently, the secondary market is only available to US citizens with US bank accounts. Shares held by an individual or joint account are eligible to be traded.",
   "table_sec_description": "We file documents with the SEC which can be obtained on www.sec.gov — you should carefully review the information contained in the offering document relating to a particular offering before investing.",
-  "risk_description": "Investing involves a number of significant risks and uncertainties. Please click here for a summary discussion  of risk factors you should consider prior to investing. Please also review the 'Risk Factors' section of our latest  SEC filings prior to investing."
+  "risk_description": "Investing involves a number of significant risks and uncertainties. Please click here for a summary discussion  of risk factors you should consider prior to investing. Please also review the 'Risk Factors' section of our latest  SEC filings prior to investing.",
+  "about_Text_1": "Every digital creation available through MakersPlace is an authentic and truly unique digital creation, signed and issued by the creator — made possible by blockchain technology. Even if the digital creation is copied, it won't be the authentic and originally signed version.",
+  "about_Text_authentic": "Every digital creation on NFTology is digitally signed by the creator and permanently recorded and verified through the blockchain.",
+  "about_Text_unique": "Every digital creation is issued as a unique digital edition. Using blockchain technology, a creator can ensure that only a limited number of authentic editions can ever be owned, ensuring scarcity and uniqueness of a digital creation.",
+  "about_Text_ownable": "Purchasing a unique digital creation means you're given full ownership over the creation, which is then transferred and stored in your digital wallet for safe-keeping.",
+  "start_your_own": "Start Your Own Collection Today",
+  "collect_desc": "Collect unique works from amazing digital creators.",
+  "showoff_desc": "Show off your collection to your friends and the community.",
+  "invest_desc": "Invest in a creator. You can resell your creation on any digital asset exchange.",
+  "how_it_works": "How It Works",
+  "artists_title": "Identify The Artists With Momentum",
+  "artists_content": "We use a proprietary data set to understand which artist markets are accelerating the most quickly and provide the best risk-adjusted returns. As a member, you can access this database for  free to do your own research.",
+  "best_examples": "We Buy The Best Examples At The Best Prices",
+  "best_examples_content": "Once we decide which artist markets are appreciating at auction, our acquisitions team locates and chooses the best example available by value to offer to our members.",
+  "buy_and_sell": "Buy And Sell Shares",
+  "buy_and_sell_content": "Our first of its kind secondary market enables you to  buy and sell shares directly to and from other investors. Currently, the secondary market is only available to US citizens with US bank accounts.",
+  "fees_title": "Management Fees",
+  "fees_content": "Masterworks is the first platform for buying and selling shares representing an investment in iconic artworks. Build a diversified portfolio of iconic works of art curated by our industry-leading research team"
 }

@@ -10,6 +10,7 @@ const Home = React.lazy(() => import('./pages/Home'))
 const Discover = React.lazy(() => import('./pages/Discover'))
 const Activity = React.lazy(() => import('./pages/Activity'))
 const Trading = React.lazy(() => import('./pages/Trading'))
+const About = React.lazy(() => import('./pages/About'))
 
 const AppContainer = styled.div`
   margin: 0;
@@ -54,6 +55,14 @@ const App: React.FC = () => {
               render={() => (
                 <MainLayout>
                   <Trading />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/about"
+              render={() => (
+                <MainLayout>
+                  <About />
                 </MainLayout>
               )}
             />

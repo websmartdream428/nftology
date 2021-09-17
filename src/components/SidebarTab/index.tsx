@@ -49,7 +49,7 @@ const SidebarTab: React.FC = () => {
         <TradingSVG selected={selected} />
       </Link>
       <Link
-        to="/discover"
+        to="/about"
         style={{ textDecoration: 'none' }}
         onClick={() => {
           setSelected('about')
