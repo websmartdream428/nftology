@@ -1,9 +1,9 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { useTable } from 'react-table'
 import { tabledata } from '../../constant/tabledata'
 import Button from '../../components/CustomButton'
 import CustomHeader from '../../components/CustomHeader'
+import Table from '../../components/CustomTable'
 import { PageContainter } from '../../styledComponents/layout/StyledMainLayout'
 import { WhiteCard } from '../../styledComponents/elements/Cards'
 import {
@@ -23,59 +23,10 @@ const TableDiv = styled.div`
   width: 100%;
 `
 
-const StyledTable = styled.table`
-  width: 100%;
-  tbody {
-    tr {
-      border-bottom: 1px solid #000000;
-    }
-  }
-`
-
-type TableProps = {
-  columns: any
-  data: any
-}
 type CellProps = {
   cell: any
 }
-function Table({ columns, data }: TableProps) {
-  const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    rows,
-    prepareRow,
-  } = useTable({
-    columns,
-    data,
-  })
-  return (
-    <StyledTable {...getTableProps()}>
-      <thead>
-        {headerGroups.map((headerGroup) => (
-          <tr {...headerGroup.getHeaderGroupProps()}>
-            {headerGroup.headers.map((column) => (
-              <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-            ))}
-          </tr>
-        ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
-        {rows.map((row) => {
-          prepareRow(row)
-          return (
-            <tr {...row.getRowProps()}>
-              {row.cells.map((cell) => {
-                return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-              })}
-            </tr>
-          )
-        })}
-      </tbody>
-    </StyledTable>
-  )
-}
+
 export default function App() {
   const columns = React.useMemo(
     () => [
@@ -123,15 +74,11 @@ export default function App() {
             <DescContent>{content.table_description}</DescContent>
           </TableDesc>
           <SearchDiv>
-            <div>
-              <SearchInput
-                style={{ width: '200px' }}
-                placeholder="Search Collectibles"
-              />
-            </div>
-            <div>
-              <SearchIcon />
-            </div>
+            <SearchInput
+              style={{ width: '200px' }}
+              placeholder="Search Collectibles"
+            />
+            <SearchIcon />
           </SearchDiv>
         </TableDescDiv>
         <TableDiv>

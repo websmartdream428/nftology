@@ -31,10 +31,10 @@ const CollectibleItem = ({
   return (
     <StyledCollectible>
       <CollectImage src={url} />
-      <p>
+      <div>
         <CollectName>{collect_name}</CollectName> -{' '}
         <ArtName>{art_name}</ArtName>
-      </p>
+      </div>
     </StyledCollectible>
   )
 }
