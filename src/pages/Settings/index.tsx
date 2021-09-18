@@ -10,6 +10,7 @@ import {
   UserDescription,
   CardDiv,
   AvatarBadge,
+  ChangeAvatar,
   EditableInput,
 } from '../../styledComponents/pages/settings/StyledSetting'
 import { PencilSVG } from '../../components/CustomSVG'
@@ -18,26 +19,33 @@ const Settings: React.FC = () => {
   return (
     <PageContainter>
       <AvatarDiv>
-        <div>
+        <ChangeAvatar>
           <AvatarImage src={useImg} alt="avatar_image" />
           <AvatarBadge>
             <PencilSVG />
           </AvatarBadge>
-        </div>
+        </ChangeAvatar>
         <UserName>User</UserName>
         <UserDescription>New User</UserDescription>
       </AvatarDiv>
-      <WhiteCard>
-        <EditableInput
-          value="adsf"
-          onChange={() => {
-            console.log('asdfasdf')
-          }}
-        />
-      </WhiteCard>
+      <WhiteCard>asdfsadf</WhiteCard>
       <CardDiv>
-        <WhiteCard>adsf</WhiteCard>
-        <WhiteCard>adsf</WhiteCard>
+        <WhiteCard>
+          <EditableInput
+            value="adsf"
+            onChange={() => {
+              console.log('asdfasdf')
+            }}
+          />
+        </WhiteCard>
+        <WhiteCard>
+          <EditableInput
+            value="adsf"
+            onChange={() => {
+              console.log('asdfasdf')
+            }}
+          />
+        </WhiteCard>
       </CardDiv>
     </PageContainter>
   )

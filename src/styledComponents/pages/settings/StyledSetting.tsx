@@ -6,7 +6,13 @@ export const AvatarDiv = styled.div`
   align-items: center;
   margin-bottom: 40px;
 `
+export const ChangeAvatar = styled.div`
+  position: relative;
+`
 export const AvatarBadge = styled.div`
+  position: absolute;
+  bottom: 13px;
+  right: 18px;
   background-color: #fff;
   border-radius: 100%;
   display: flex;
@@ -16,7 +22,6 @@ export const AvatarBadge = styled.div`
   height: 28px;
   cursor: pointer;
 `
-
 export const AvatarImage = styled.img`
   width: 169px;
   height: 171px;
