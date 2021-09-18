@@ -5,7 +5,7 @@ export const WhiteCard = styled.div`
   border-radius: 17px;
   background-color: #fdfdfe;
   width: 100%;
-  margin: 30px 0;
+  margin-bottom: 60px;
 `
 
 export const NoColorCard = styled.div`

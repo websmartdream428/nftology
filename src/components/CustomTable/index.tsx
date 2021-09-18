@@ -7,6 +7,7 @@ const StyledTable = styled.table`
   thead {
     th {
       padding: 10px 20px 10px 20px;
+      font-weight: 500;
     }
   }
   tbody {

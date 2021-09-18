@@ -27,12 +27,13 @@ export const SearchDiv = styled.div`
 
 export const SearchInput = styled.input`
   border: none;
-  padding: 14px 15px;
+  padding: 15px 15px;
   border-radius: 10px;
   font-size: 17px;
   font-weight: 500;
   background-color: #e5e9fa;
   outline: none;
+  width: 100%;
 `
 
 export const SignInDiv = styled.div`

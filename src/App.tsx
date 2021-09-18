@@ -11,6 +11,7 @@ const Discover = React.lazy(() => import('./pages/Discover'))
 const Activity = React.lazy(() => import('./pages/Activity'))
 const Trading = React.lazy(() => import('./pages/Trading'))
 const About = React.lazy(() => import('./pages/About'))
+const ConnectWallet = React.lazy(() => import('./pages/ConnectWallet'))
 
 const AppContainer = styled.div`
   margin: 0;
@@ -63,6 +64,14 @@ const App: React.FC = () => {
               render={() => (
                 <MainLayout>
                   <About />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/connectwallet"
+              render={() => (
+                <MainLayout>
+                  <ConnectWallet />
                 </MainLayout>
               )}
             />

@@ -48,5 +48,26 @@
   "transaction_content": "Shares will be available for transaction 90 days after the primary offering closing",
   "lower_title": "Lower minimums",
   "lower_content": "Invest on the secondary market with lower minimums than primary offerings",
-  "enter_secondary_market": "Enter Secondary Market"
+  "enter_secondary_market": "Enter Secondary Market",
+  "thank_title": "Thank You!",
+  "provide1_content": "As we like to ensure the protection of artists' creations, identity verification is an important aspect of the on-boarding process. Please temporarily add your email (the same one you provided above) to your Website / Portfolio / Social Media bio, to verify your ownership of them. List the link(s) where we can verify the placement of your email, below:",
+  "provide1_title": "Please provide full URL social media links and references *",
+  "provide2_title": "Please provide a link to Google Drive or Dropbox with examples of your best, past work. *",
+  "provide2_content": "Please provide links that showcase examples of your past work.",
+  "provide3_title": "Please provide background information on yourself (achievements, awards, etc.) and related to your art career. *",
+  "skip_the_waitlist": "Skip the waitlist",
+  "skip_the_waitlist_content": "Over 140K people have signed up to get access to one of most exclusive asset classes in the world.",
+  "exceptional_historical": "Exceptional historical returns",
+  "exceptional_historical_content": "Our single realized investment returned 32% annualized",
+  "revolutionary_platform": "Revolutionary platform",
+  "revolutionary_platform_content": "Our Secondary Market has provided for our investors  a means for interim liquidity",
+  "thank_text": [
+    "Thank you for your interest in NFTology, the premier rare digital collectibles marketplace.",
+    "Please fill out the following application to join. NFTology is currently invite-only for artists, so your acceptance is not guaranteed.",
+    "Note: If you do not hear back within 3 weeks, it means that your invite wasn’t approved at this time.  This could be due to a number of reasons as a result of the high volume of requests we receive.",
+    "Thank you for your interest!"
+  ],
+  "required": "*Required",
+  "if_accepted": "If accepted, will you be using your own digital wallet?",
+  "by_using": "By using our website, you agree to our Terms of Use and Privacy Policy. You also agree to receive periodic newsletters from us."
 }

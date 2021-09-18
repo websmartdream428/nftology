@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import {
   HomeSVG,
@@ -9,53 +9,52 @@ import {
 } from '../CustomSVG'
 
 const SidebarTab: React.FC = () => {
-  const [selected, setSelected] = useState('home')
   return (
     <div>
       <Link
         to="/home"
         style={{ textDecoration: 'none' }}
         onClick={() => {
-          setSelected('home')
+          localStorage.setItem('currentRouter', 'home')
         }}
       >
-        <HomeSVG selected={selected} />
+        <HomeSVG />
       </Link>
       <Link
         to="/discover"
         style={{ textDecoration: 'none' }}
         onClick={() => {
-          setSelected('discover')
+          localStorage.setItem('currentRouter', 'discover')
         }}
       >
-        <DiscoverSVG selected={selected} />
+        <DiscoverSVG />
       </Link>
       <Link
         to="/activity"
         style={{ textDecoration: 'none' }}
         onClick={() => {
-          setSelected('activity')
+          localStorage.setItem('currentRouter', 'activity')
         }}
       >
-        <ActivitySVG selected={selected} />
+        <ActivitySVG />
       </Link>
       <Link
         to="/trading"
         style={{ textDecoration: 'none' }}
         onClick={() => {
-          setSelected('trading')
+          localStorage.setItem('currentRouter', 'trading')
         }}
       >
-        <TradingSVG selected={selected} />
+        <TradingSVG />
       </Link>
       <Link
         to="/about"
         style={{ textDecoration: 'none' }}
         onClick={() => {
-          setSelected('about')
+          localStorage.setItem('currentRouter', 'about')
         }}
       >
-        <AboutSVG selected={selected} />
+        <AboutSVG />
       </Link>
     </div>
   )

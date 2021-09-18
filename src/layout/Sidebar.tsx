@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/images/Logo.png'
-import Button from '../components/CustomButton'
 import SidebarTab from '../components/SidebarTab'
 
 import * as Styled from '../styledComponents/layout/StyledSideBar'
+import ConnectWalletBtn from './ConnectWalletBtn'
 
 const Sidebar: React.FC = () => {
   return (
@@ -15,15 +16,15 @@ const Sidebar: React.FC = () => {
         <SidebarTab />
       </Styled.SideBarTab>
       <Styled.SideBarButton>
-        <Button
-          border="none"
-          color="#E5E9FA"
-          height="54px"
-          onClick={() => console.log('You clicked on the pink circle!')}
-          radius="12px"
-          width="219px"
-          value="Connect Wallet"
-        />
+        <Link
+          to="/connectWallet"
+          style={{ textDecoration: 'none' }}
+          onClick={() => {
+            localStorage.setItem('currentRouter', 'connectWallet')
+          }}
+        >
+          <ConnectWalletBtn />
+        </Link>
       </Styled.SideBarButton>
     </Styled.SideBarDiv>
   )
