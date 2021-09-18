@@ -41,5 +41,12 @@
   "buy_and_sell": "Buy And Sell Shares",
   "buy_and_sell_content": "Our first of its kind secondary market enables you to  buy and sell shares directly to and from other investors. Currently, the secondary market is only available to US citizens with US bank accounts.",
   "fees_title": "Management Fees",
-  "fees_content": "Masterworks is the first platform for buying and selling shares representing an investment in iconic artworks. Build a diversified portfolio of iconic works of art curated by our industry-leading research team"
+  "fees_content": "Masterworks is the first platform for buying and selling shares representing an investment in iconic artworks. Build a diversified portfolio of iconic works of art curated by our industry-leading research team",
+  "easy_title": "Easy Access",
+  "easy_content": "Shares will be available for transaction 90 days after the primary offering closing",
+  "transaction_title": "No transaction fees",
+  "transaction_content": "Shares will be available for transaction 90 days after the primary offering closing",
+  "lower_title": "Lower minimums",
+  "lower_content": "Invest on the secondary market with lower minimums than primary offerings",
+  "enter_secondary_market": "Enter Secondary Market"
 }

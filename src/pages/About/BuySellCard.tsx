@@ -9,6 +9,10 @@ import {
 import content from '../../constant/en.json'
 import SellImg from '../../assets/images/sell.png'
 import { NoColorCard } from '../../styledComponents/elements/Cards'
+import { ArrowSVG } from '../../components/CustomSVG'
+import BuyIco1 from '../../assets/images/buyIco1.png'
+import BuyIco2 from '../../assets/images/buyIco2.png'
+import BuyIco3 from '../../assets/images/buyIco3.png'
 
 const SellShareCard = styled.div`
   background-color: #330b7e;
@@ -54,6 +58,49 @@ const SellConfirm = styled.div`
   font-size: 19px;
 `
 
+const EnterSecondaryMarket = styled.div`
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+  svg {
+    margin-left: 10px;
+  }
+`
+
+const BuySellDetails = styled.div`
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 1%;
+  margin-top: 20px;
+`
+
+const BuySellDetail = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const DetailIco = styled.img`
+  width: 37.85px;
+  height: 37.85px;
+  margin-bottom: 10px;
+`
+const GoMarket = styled.span`
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+`
+const DetailTitle = styled.span`
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+`
+const DetailContent = styled.span`
+  cursor: pointer;
+  font-size: 9px;
+  margin-bottom: 10px;
+`
+
 const BuySellCard: React.FC = () => {
   return (
     <NoColorCard>
@@ -90,6 +137,29 @@ const BuySellCard: React.FC = () => {
         <TextDiv>
           <TextTitle>{content.buy_and_sell}</TextTitle>
           <TextContent>{content.buy_and_sell_content}</TextContent>
+          <BuySellDetails>
+            <BuySellDetail>
+              <DetailIco src={BuyIco1} alt="ico" />
+              <DetailTitle>{content.easy_title}</DetailTitle>
+              <DetailContent>{content.easy_content}</DetailContent>
+            </BuySellDetail>
+            <BuySellDetail>
+              <DetailIco src={BuyIco2} alt="ico" />
+              <DetailTitle>{content.transaction_title}</DetailTitle>
+              <DetailContent>{content.transaction_content}</DetailContent>
+            </BuySellDetail>
+            <BuySellDetail>
+              <DetailIco src={BuyIco3} alt="ico" />
+              <DetailTitle>{content.lower_title}</DetailTitle>
+              <DetailContent>{content.lower_content}</DetailContent>
+            </BuySellDetail>
+          </BuySellDetails>
+          <EnterSecondaryMarket>
+            <GoMarket>
+              {content.enter_secondary_market}
+              <ArrowSVG selected="#000" />
+            </GoMarket>
+          </EnterSecondaryMarket>
         </TextDiv>
       </TextImage>
     </NoColorCard>
