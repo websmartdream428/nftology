@@ -5,17 +5,23 @@ export const MainContainer = styled.div`
   display: flex;
 `
 type MainContentProps = {
-  isAuthenticate: boolean
+  isAuthenticate: string
+  mobileView: boolean
 }
 export const MainContent = styled.div<MainContentProps>`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow: auto;
-  ${({ isAuthenticate }) =>
-    isAuthenticate
-      ? 'width: calc(100vw - (331px * 2));'
-      : 'width: calc(100vw - 331px);'}
+
+  ${({ mobileView, isAuthenticate }) =>
+    mobileView
+      ? 'width: 100%'
+      : `${
+          isAuthenticate === 'true'
+            ? 'width: calc(100vw - (331px * 2));'
+            : 'width: calc(100vw - 331px);'
+        }`}
 `
 
 export const PageContainter = styled.div`

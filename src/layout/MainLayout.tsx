@@ -17,7 +17,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 600
+      return window.innerWidth < 1024
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }))
     }
@@ -25,16 +25,23 @@ const MainLayout = ({ children }: MainLayoutProps) => {
     window.addEventListener('resize', () => setResponsiveness())
   }, [])
 
-  const isAuthenticate = false
   return (
     <MainContainer>
       {!mobileView && <Sidebar />}
-      <MainContent isAuthenticate={isAuthenticate}>
+      <MainContent
+        mobileView={mobileView}
+        isAuthenticate={
+          localStorage.getItem('isAuth') === null ||
+          localStorage.getItem('isAuth') === 'false'
+            ? 'false'
+            : 'true'
+        }
+      >
         <Header />
         {children}
         <Footer />
       </MainContent>
-      {isAuthenticate && <Userbar />}
+      {!mobileView && localStorage.getItem('isAuth') === 'true' && <Userbar />}
     </MainContainer>
   )
 }

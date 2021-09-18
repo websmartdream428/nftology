@@ -1,10 +1,16 @@
 import React from 'react'
+import { UserbarDiv } from '../styledComponents/layout/StyledUserbar'
+import Logout from './Logout'
+import UserAvatar from './UserAvatar'
+import UserTabBar from './UserTabBar'
 
 const Userbar: React.FC = () => {
   return (
-    <div className="userbar">
-      <h6>Userbar</h6>
-    </div>
+    <UserbarDiv>
+      <UserAvatar />
+      <UserTabBar />
+      <Logout />
+    </UserbarDiv>
   )
 }
 

@@ -26,6 +26,7 @@ import content from '../../constant/en.json'
 const TableDiv = styled.div`
   margin-top: 50px;
   width: 100%;
+  overflow: auto;
 `
 
 export default function App() {

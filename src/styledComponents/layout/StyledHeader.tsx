@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
-export const HeaderBar = styled.div`
+type HeaderProps = {
+  isAuthenticate: string
+  mobileView: boolean
+}
+export const HeaderBar = styled.div<HeaderProps>`
   position: fixed;
   text-align: right;
   padding-top: 40px;
@@ -9,7 +13,10 @@ export const HeaderBar = styled.div`
   align-items: center;
   padding-bottom: 48px;
   justify-content: flex-end;
-  right: 30px;
+  ${({ mobileView, isAuthenticate }) =>
+    mobileView
+      ? 'right: 10%;'
+      : `${isAuthenticate === 'true' ? 'right: 30%;' : 'right: 10%;'}`}
   z-index: 1;
 `
 

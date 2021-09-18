@@ -36,10 +36,22 @@ const SignInPage: React.FC = () => {
           </PasswordInputDiv>
           <SignDesc>{content.sign_description}</SignDesc>
           <ControlGroup>
-            <MoreText style={{ marginBottom: '20px' }}>
-              Sign In
-              <ArrowSVG selected="#000" />
-            </MoreText>
+            <Link
+              to="/home"
+              style={{ textDecoration: 'none' }}
+              onClick={() => {
+                localStorage.setItem('isAuth', 'true')
+                localStorage.setItem('currentRouter', 'home')
+              }}
+            >
+              <MoreText
+                style={{ marginBottom: '20px' }}
+                onClick={() => localStorage.setItem('isAuth', 'true')}
+              >
+                Sign In
+                <ArrowSVG selected="#000" />
+              </MoreText>
+            </Link>
             <Link
               to="/connectWallet"
               style={{ textDecoration: 'none' }}

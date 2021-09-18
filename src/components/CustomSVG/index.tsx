@@ -260,143 +260,215 @@ export const AboutSVG = () => {
     </TabPane>
   )
 }
-export const OverviewSVG = ({ selected }: CustomSVGProps) => {
+export const OverviewSVG = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="21"
-      height="22"
-      viewBox="0 0 21 22"
+    <TabPane
+      style={
+        localStorage.getItem('currentRouter') === 'overview'
+          ? { color: '#902fff', borderLeft: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
     >
-      <g id="Group_11" data-name="Group 11" transform="translate(-1670 -284)">
-        <g
-          id="Rectangle_1"
-          data-name="Rectangle 1"
-          transform="translate(1670 284)"
-          fill="none"
-          stroke={selected}
-          strokeWidth="2"
-        >
-          <rect width="10" height="10" rx="2" stroke="none" />
-          <rect x="1" y="1" width="8" height="8" rx="1" fill="none" />
-        </g>
-        <g
-          id="Rectangle_2"
-          data-name="Rectangle 2"
-          transform="translate(1681 284)"
-          fill="none"
-          stroke={selected}
-          strokeWidth="2"
-        >
-          <rect width="10" height="10" rx="2" stroke="none" />
-          <rect x="1" y="1" width="8" height="8" rx="1" fill="none" />
-        </g>
-        <g
-          id="Rectangle_3"
-          data-name="Rectangle 3"
-          transform="translate(1681 296)"
-          fill="none"
-          stroke={selected}
-          strokeWidth="2"
-        >
-          <rect width="10" height="10" rx="2" stroke="none" />
-          <rect x="1" y="1" width="8" height="8" rx="1" fill="none" />
-        </g>
-        <g
-          id="Rectangle_4"
-          data-name="Rectangle 4"
-          transform="translate(1670 296)"
-          fill="none"
-          stroke={selected}
-          strokeWidth="2"
-        >
-          <rect width="10" height="10" rx="2" stroke="none" />
-          <rect x="1" y="1" width="8" height="8" rx="1" fill="none" />
-        </g>
-      </g>
-    </svg>
-  )
-}
-export const CreationSVG = ({ selected }: CustomSVGProps) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="24"
-      viewBox="0 0 20 24"
-    >
-      <g id="fi-rr-book_1" data-name="fi-rr-book 1" transform="translate(-2)">
-        <path
-          id="Vector"
-          d="M15,0H5A5.006,5.006,0,0,0,0,5V20a4,4,0,0,0,4,4H15a5.006,5.006,0,0,0,5-5V5a5.006,5.006,0,0,0-5-5Zm3,5V16H6V2h9a3,3,0,0,1,3,3ZM4,2.172V16a3.98,3.98,0,0,0-2,.537V5A3,3,0,0,1,4,2.172ZM15,22H4a2,2,0,0,1,0-4H18v1a3,3,0,0,1-3,3Z"
-          transform="translate(2)"
-          fill={selected}
-        />
-      </g>
-    </svg>
-  )
-}
-export const CollectionSVG = ({ selected }: CustomSVGProps) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="23.166"
-      height="23.166"
-      viewBox="0 0 23.166 23.166"
-    >
-      <g
-        id="Group_14"
-        data-name="Group 14"
-        transform="translate(-381.992 -257.262)"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="21"
+        height="22"
+        viewBox="0 0 21 22"
       >
-        <path
-          id="Path_12"
-          data-name="Path 12"
-          d="M406.848,258.267c2.077,0,4.153-.015,6.23,0,1.807.017,2.62.821,2.627,2.628q.025,6.23,0,12.46c-.007,1.807-.82,2.62-2.627,2.627q-6.23.025-12.46,0c-1.807-.007-2.62-.82-2.627-2.627q-.025-6.23,0-12.46c.007-1.807.82-2.611,2.627-2.628C402.7,258.252,404.772,258.267,406.848,258.267Zm-.135,15.509c1.754,0,3.508.006,5.262,0,.847,0,1.161-.381.61-1.109-.947-1.25-1.949-2.459-2.931-3.683-.437-.544-.843-.435-1.237.06-.689.867-1.407,1.713-2.068,2.6-.418.561-.674.549-1.13,0-1.791-2.17-1.811-2.153-3.543.163-.194.259-.394.512-.58.776-.566.805-.3,1.19.631,1.195C403.39,273.782,405.052,273.776,406.714,273.776Z"
-          transform="translate(-11.559 0)"
-          fill="#fefefe"
-          stroke={selected}
-          strokeWidth="2"
-        />
-        <path
-          id="Path_13"
-          data-name="Path 13"
-          d="M391.276,292.146c-2.211,0-4.423.014-6.634,0-1.813-.015-2.634-.814-2.641-2.607-.017-4.469,0-8.938-.009-13.407,0-.848.1-1.688,1.168-1.651.966.034,1.055.838,1.053,1.63q-.013,5.943,0,11.887c0,1.706.224,1.933,1.9,1.936q5.529.011,11.057,0c.276,0,.553.006.829,0,.843-.023,1.69.081,1.666,1.151-.022.967-.818,1.072-1.615,1.068C395.792,292.139,393.534,292.147,391.276,292.146Z"
-          transform="translate(0 -11.724)"
-          fill={selected}
-        />
-      </g>
-    </svg>
+        <g id="Group_11" data-name="Group 11" transform="translate(-1670 -284)">
+          <g
+            id="Rectangle_1"
+            data-name="Rectangle 1"
+            transform="translate(1670 284)"
+            fill="none"
+            stroke={
+              localStorage.getItem('currentRouter') === 'overview'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+            strokeWidth="2"
+          >
+            <rect width="10" height="10" rx="2" stroke="none" />
+            <rect x="1" y="1" width="8" height="8" rx="1" fill="none" />
+          </g>
+          <g
+            id="Rectangle_2"
+            data-name="Rectangle 2"
+            transform="translate(1681 284)"
+            fill="none"
+            stroke={
+              localStorage.getItem('currentRouter') === 'overview'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+            strokeWidth="2"
+          >
+            <rect width="10" height="10" rx="2" stroke="none" />
+            <rect x="1" y="1" width="8" height="8" rx="1" fill="none" />
+          </g>
+          <g
+            id="Rectangle_3"
+            data-name="Rectangle 3"
+            transform="translate(1681 296)"
+            fill="none"
+            stroke={
+              localStorage.getItem('currentRouter') === 'overview'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+            strokeWidth="2"
+          >
+            <rect width="10" height="10" rx="2" stroke="none" />
+            <rect x="1" y="1" width="8" height="8" rx="1" fill="none" />
+          </g>
+          <g
+            id="Rectangle_4"
+            data-name="Rectangle 4"
+            transform="translate(1670 296)"
+            fill="none"
+            stroke={
+              localStorage.getItem('currentRouter') === 'overview'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+            strokeWidth="2"
+          >
+            <rect width="10" height="10" rx="2" stroke="none" />
+            <rect x="1" y="1" width="8" height="8" rx="1" fill="none" />
+          </g>
+        </g>
+      </svg>
+      Overview
+    </TabPane>
   )
 }
-export const SettingSVG = ({ selected }: CustomSVGProps) => {
+export const CreationSVG = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="21.593"
-      height="24"
-      viewBox="0 0 21.593 24"
+    <TabPane
+      style={
+        localStorage.getItem('currentRouter') === 'creation'
+          ? { color: '#902fff', borderLeft: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
     >
-      <g
-        id="fi-rr-settings_1"
-        data-name="fi-rr-settings 1"
-        transform="translate(-1.203)"
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="24"
+        viewBox="0 0 20 24"
       >
-        <path
-          id="Vector"
-          d="M4,0A4,4,0,1,0,6.828,1.172,4,4,0,0,0,4,0ZM4,6a2,2,0,1,1,1.414-.586A2,2,0,0,1,4,6Z"
-          transform="translate(8 8)"
-          fill={selected}
-        />
-        <path
-          id="Vector-2"
-          data-name="Vector"
-          d="M20.091,13.9l-.444-.256a9.1,9.1,0,0,0,0-3.29l.444-.256a3,3,0,0,0-3-5.2l-.445.257A8.977,8.977,0,0,0,13.8,3.513V3a3,3,0,1,0-6,0v.513A8.977,8.977,0,0,0,4.949,5.159L4.5,4.9a3,3,0,0,0-3,5.2l.444.256a9.1,9.1,0,0,0,0,3.29L1.5,13.9a3,3,0,1,0,3,5.2l.445-.257A8.977,8.977,0,0,0,7.8,20.487V21a3,3,0,1,0,6,0v-.513a8.977,8.977,0,0,0,2.848-1.646l.447.258a3,3,0,0,0,3-5.2Zm-2.548-3.776a7.048,7.048,0,0,1,0,3.75,1,1,0,0,0,.464,1.133l1.084.626a1,1,0,1,1-1,1.733L17,16.738a1,1,0,0,0-1.215.165,6.984,6.984,0,0,1-3.243,1.875,1,1,0,0,0-.751.969V21a1,1,0,1,1-2,0V19.748a1,1,0,0,0-.751-.969A6.984,6.984,0,0,1,5.8,16.9a1,1,0,0,0-1.215-.165L3.5,17.362a1,1,0,1,1-1-1.732L3.588,15a1,1,0,0,0,.464-1.133,7.048,7.048,0,0,1,0-3.75,1,1,0,0,0-.465-1.129L2.5,8.366a1,1,0,1,1,1-1.733l1.086.628A1,1,0,0,0,5.8,7.1,6.984,6.984,0,0,1,9.046,5.225,1,1,0,0,0,9.8,4.252V3a1,1,0,0,1,2,0V4.252a1,1,0,0,0,.751.969A6.984,6.984,0,0,1,15.791,7.1a1,1,0,0,0,1.215.165l1.084-.627a1,1,0,1,1,1,1.732L18.006,9a1,1,0,0,0-.463,1.129Z"
-          transform="translate(1.203 0)"
-          fill={selected}
-        />
-      </g>
-    </svg>
+        <g id="fi-rr-book_1" data-name="fi-rr-book 1" transform="translate(-2)">
+          <path
+            id="Vector"
+            d="M15,0H5A5.006,5.006,0,0,0,0,5V20a4,4,0,0,0,4,4H15a5.006,5.006,0,0,0,5-5V5a5.006,5.006,0,0,0-5-5Zm3,5V16H6V2h9a3,3,0,0,1,3,3ZM4,2.172V16a3.98,3.98,0,0,0-2,.537V5A3,3,0,0,1,4,2.172ZM15,22H4a2,2,0,0,1,0-4H18v1a3,3,0,0,1-3,3Z"
+            transform="translate(2)"
+            fill={
+              localStorage.getItem('currentRouter') === 'creation'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+          />
+        </g>
+      </svg>
+      Creation
+    </TabPane>
+  )
+}
+export const CollectionSVG = () => {
+  return (
+    <TabPane
+      style={
+        localStorage.getItem('currentRouter') === 'collection'
+          ? { color: '#902fff', borderLeft: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="23.166"
+        height="23.166"
+        viewBox="0 0 23.166 23.166"
+      >
+        <g
+          id="Group_14"
+          data-name="Group 14"
+          transform="translate(-381.992 -257.262)"
+        >
+          <path
+            id="Path_12"
+            data-name="Path 12"
+            d="M406.848,258.267c2.077,0,4.153-.015,6.23,0,1.807.017,2.62.821,2.627,2.628q.025,6.23,0,12.46c-.007,1.807-.82,2.62-2.627,2.627q-6.23.025-12.46,0c-1.807-.007-2.62-.82-2.627-2.627q-.025-6.23,0-12.46c.007-1.807.82-2.611,2.627-2.628C402.7,258.252,404.772,258.267,406.848,258.267Zm-.135,15.509c1.754,0,3.508.006,5.262,0,.847,0,1.161-.381.61-1.109-.947-1.25-1.949-2.459-2.931-3.683-.437-.544-.843-.435-1.237.06-.689.867-1.407,1.713-2.068,2.6-.418.561-.674.549-1.13,0-1.791-2.17-1.811-2.153-3.543.163-.194.259-.394.512-.58.776-.566.805-.3,1.19.631,1.195C403.39,273.782,405.052,273.776,406.714,273.776Z"
+            transform="translate(-11.559 0)"
+            fill="#fefefe"
+            stroke={
+              localStorage.getItem('currentRouter') === 'collection'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+            strokeWidth="2"
+          />
+          <path
+            id="Path_13"
+            data-name="Path 13"
+            d="M391.276,292.146c-2.211,0-4.423.014-6.634,0-1.813-.015-2.634-.814-2.641-2.607-.017-4.469,0-8.938-.009-13.407,0-.848.1-1.688,1.168-1.651.966.034,1.055.838,1.053,1.63q-.013,5.943,0,11.887c0,1.706.224,1.933,1.9,1.936q5.529.011,11.057,0c.276,0,.553.006.829,0,.843-.023,1.69.081,1.666,1.151-.022.967-.818,1.072-1.615,1.068C395.792,292.139,393.534,292.147,391.276,292.146Z"
+            transform="translate(0 -11.724)"
+            fill={
+              localStorage.getItem('currentRouter') === 'collection'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+          />
+        </g>
+      </svg>
+      Collection
+    </TabPane>
+  )
+}
+export const SettingSVG = () => {
+  return (
+    <TabPane
+      style={
+        localStorage.getItem('currentRouter') === 'settings'
+          ? { color: '#902fff', borderLeft: '3px solid #902fff' }
+          : { color: '#a2a2c2' }
+      }
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="21.593"
+        height="24"
+        viewBox="0 0 21.593 24"
+      >
+        <g
+          id="fi-rr-settings_1"
+          data-name="fi-rr-settings 1"
+          transform="translate(-1.203)"
+        >
+          <path
+            id="Vector"
+            d="M4,0A4,4,0,1,0,6.828,1.172,4,4,0,0,0,4,0ZM4,6a2,2,0,1,1,1.414-.586A2,2,0,0,1,4,6Z"
+            transform="translate(8 8)"
+            fill={
+              localStorage.getItem('currentRouter') === 'settings'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+          />
+          <path
+            id="Vector-2"
+            data-name="Vector"
+            d="M20.091,13.9l-.444-.256a9.1,9.1,0,0,0,0-3.29l.444-.256a3,3,0,0,0-3-5.2l-.445.257A8.977,8.977,0,0,0,13.8,3.513V3a3,3,0,1,0-6,0v.513A8.977,8.977,0,0,0,4.949,5.159L4.5,4.9a3,3,0,0,0-3,5.2l.444.256a9.1,9.1,0,0,0,0,3.29L1.5,13.9a3,3,0,1,0,3,5.2l.445-.257A8.977,8.977,0,0,0,7.8,20.487V21a3,3,0,1,0,6,0v-.513a8.977,8.977,0,0,0,2.848-1.646l.447.258a3,3,0,0,0,3-5.2Zm-2.548-3.776a7.048,7.048,0,0,1,0,3.75,1,1,0,0,0,.464,1.133l1.084.626a1,1,0,1,1-1,1.733L17,16.738a1,1,0,0,0-1.215.165,6.984,6.984,0,0,1-3.243,1.875,1,1,0,0,0-.751.969V21a1,1,0,1,1-2,0V19.748a1,1,0,0,0-.751-.969A6.984,6.984,0,0,1,5.8,16.9a1,1,0,0,0-1.215-.165L3.5,17.362a1,1,0,1,1-1-1.732L3.588,15a1,1,0,0,0,.464-1.133,7.048,7.048,0,0,1,0-3.75,1,1,0,0,0-.465-1.129L2.5,8.366a1,1,0,1,1,1-1.733l1.086.628A1,1,0,0,0,5.8,7.1,6.984,6.984,0,0,1,9.046,5.225,1,1,0,0,0,9.8,4.252V3a1,1,0,0,1,2,0V4.252a1,1,0,0,0,.751.969A6.984,6.984,0,0,1,15.791,7.1a1,1,0,0,0,1.215.165l1.084-.627a1,1,0,1,1,1,1.732L18.006,9a1,1,0,0,0-.463,1.129Z"
+            transform="translate(1.203 0)"
+            fill={
+              localStorage.getItem('currentRouter') === 'settings'
+                ? '#902fff'
+                : '#a2a2c2'
+            }
+          />
+        </g>
+      </svg>
+      Settings
+    </TabPane>
   )
 }
 export const ArrowSVG = ({ selected }: CustomSVGProps) => {
@@ -552,6 +624,33 @@ export const Arrow2SVG = () => {
         d="M11,0,22,18H0Z"
         transform="translate(18) rotate(90)"
         fill="#330b7e"
+      />
+    </svg>
+  )
+}
+
+export const LogoutSVG = () => {
+  return (
+    <svg
+      id="fi-rr-sign-out_1"
+      data-name="fi-rr-sign-out 1"
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+    >
+      <path
+        id="Vector"
+        d="M5.25,16.5H3.75A2.25,2.25,0,0,1,1.5,14.25V3.75A2.25,2.25,0,0,1,3.75,1.5h1.5a.75.75,0,0,0,0-1.5H3.75A3.755,3.755,0,0,0,0,3.75v10.5A3.754,3.754,0,0,0,3.75,18h1.5a.75.75,0,1,0,0-1.5Z"
+        transform="translate(0 0)"
+        fill="#a2a2c2"
+      />
+      <path
+        id="Vector-2"
+        data-name="Vector"
+        d="M10.153,10.271l3.44-3.44a2.255,2.255,0,0,0,0-3.182L10.153.211a.75.75,0,0,0-1.06,1.06l3.219,3.22H.75a.75.75,0,0,0,0,1.5H12.313l-3.22,3.22a.75.75,0,1,0,1.06,1.061Z"
+        transform="translate(3.75 3.759)"
+        fill="#a2a2c2"
       />
     </svg>
   )
