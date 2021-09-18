@@ -35,6 +35,7 @@ export const CardImageSlider = styled.div`
 
 export const MoreText = styled.div`
   cursor: pointer;
+  color: #000;
   svg {
     margin-left: 5px;
   }

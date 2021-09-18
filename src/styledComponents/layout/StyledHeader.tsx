@@ -38,4 +38,5 @@ export const SearchInput = styled.input`
 
 export const SignInDiv = styled.div`
   cursor: pointer;
+  color: #000;
 `

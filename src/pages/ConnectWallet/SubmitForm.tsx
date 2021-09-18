@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { MoreText, WhiteCard } from '../../styledComponents/elements/Cards'
 import { SearchInput } from '../../styledComponents/layout/StyledHeader'
 import {
@@ -40,10 +41,18 @@ const SubmitForm: React.FC = () => {
           Submit
           <ArrowSVG selected="#000" />
         </MoreText>
-        <MoreText>
-          Already have an account? Sign in
-          <ArrowSVG selected="#000" />
-        </MoreText>
+        <Link
+          to="/signin"
+          style={{ textDecoration: 'none' }}
+          onClick={() => {
+            localStorage.setItem('currentRouter', 'signin')
+          }}
+        >
+          <MoreText>
+            Already have an account? Sign in
+            <ArrowSVG selected="#000" />
+          </MoreText>
+        </Link>
       </ControlGroup>
     </WhiteCard>
   )

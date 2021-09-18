@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowSVG, SearchIcon } from '../components/CustomSVG'
 import content from '../constant/en.json'
 
@@ -15,9 +16,17 @@ const Header: React.FC = () => {
           <SearchIcon />
         </div>
       </Styled.SearchDiv>
-      <Styled.SignInDiv>
-        Sign in <ArrowSVG selected="#000" />
-      </Styled.SignInDiv>
+      <Link
+        to="/signin"
+        style={{ textDecoration: 'none' }}
+        onClick={() => {
+          localStorage.setItem('currentRouter', 'signin')
+        }}
+      >
+        <Styled.SignInDiv>
+          Sign in <ArrowSVG selected="#000" />
+        </Styled.SignInDiv>
+      </Link>
     </Styled.HeaderBar>
   )
 }

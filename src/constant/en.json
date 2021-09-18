@@ -69,5 +69,7 @@
   ],
   "required": "*Required",
   "if_accepted": "If accepted, will you be using your own digital wallet?",
-  "by_using": "By using our website, you agree to our Terms of Use and Privacy Policy. You also agree to receive periodic newsletters from us."
+  "by_using": "By using our website, you agree to our Terms of Use and Privacy Policy. You also agree to receive periodic newsletters from us.",
+  "sign_description": "By using our website, you agree to our Terms of Use and Privacy Policy. You also agree to receive periodic newsletters from us.",
+  "dont_have_account": "Don't have an account? Connect Wallet"
 }
