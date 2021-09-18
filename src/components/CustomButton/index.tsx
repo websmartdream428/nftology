@@ -1,34 +1,22 @@
 import React from 'react'
 
 type CustomSVGProps = {
-  border: string
-  color: string
   value: string
-  height: string
   onClick: () => void
-  radius: string
-  width: string
 }
-const Button = ({
-  border,
-  color,
-  value,
-  height,
-  onClick,
-  radius,
-  width,
-}: CustomSVGProps) => {
+const Button = ({ value, onClick }: CustomSVGProps) => {
   return (
     <button
       type="button"
       onClick={onClick}
       style={{
         cursor: 'pointer',
-        backgroundColor: color,
-        border,
-        borderRadius: radius,
-        height,
-        width,
+        backgroundColor: '#E5E9FA',
+        border: 'none',
+        borderRadius: '12px',
+        height: '54px',
+        width: '219px',
+        color: '#000',
       }}
     >
       {/* Hello */}

@@ -71,5 +71,22 @@
   "if_accepted": "If accepted, will you be using your own digital wallet?",
   "by_using": "By using our website, you agree to our Terms of Use and Privacy Policy. You also agree to receive periodic newsletters from us.",
   "sign_description": "By using our website, you agree to our Terms of Use and Privacy Policy. You also agree to receive periodic newsletters from us.",
-  "dont_have_account": "Don't have an account? Connect Wallet"
+  "dont_have_account": "Don't have an account? Connect Wallet",
+  "submit_your_work": "Submit Your Work As An NFT for NFTology",
+  "description_of_nft": "Description of NFT's",
+  "description_of_nft_content": "Be sure to Provide a small paragraph description for each ",
+  "image_video_audio_3d": "Image, Video, Audio, or 3D Model *",
+  "image_video_audio_3d_content": "File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 70 MB",
+  "what_nftology": "What is NFTology",
+  "what_nftology_content": "MakersPlace is a platform that empowers creators to better protect and sell their digital work to a global audience. Artists, photographers, writers, and more use NFTology to create and sell their work online through the use of blockchain technology.",
+  "what_selling": "What am I selling?",
+  "what_selling_content": "You're selling a signed and limited edition copy of your digital creation to be owned.\n Upon purchase, the buyer will be given the right to use, distribute and display the creation for non-commercial purposes only. Since the buyer owns this unique copy, they can also re-sell the creation on a secondary market or even directly on NFTology.\n Similar to a physical creation, the buyer will be able to do what they'd normally be able to do once they purchase a physical piece. This capability is what makes your digital creations more valuable.",
+  "who_owns_creations": "Who owns my creations?",
+  "who_owns_creations_content": "NFTology is a platform for creators and has no rights over your creations. We are committed to ensuring that any digital creation published through NFTology is owned by you (the creator). You can find more details in our terms of service.",
+  "if_sell_using_nftology": "If I sell using NFTology, can I sell the same creations elsewhere?",
+  "if_sell_using_nftology_content": "You own the rights to your work, so you can sell your creations elsewhere. However, once you've tokenized your creation as a limited edition, it's important that you do not issue more tokens of the same creations which may negatively affect the value of your creation.",
+  "how_receive_payment": "How do I receive payment?",
+  "how_receive_payment_content": "Depending on what form of payment was used to purchase your digital creation, you'll get paid accordingly.\n\n Credit Card Purchases. We support PayPal (a popular global payment solution) to issue payments for creations purchased using a credit card.\n\n PayPal. With PayPal, payments will be deposited to your PayPal account within two weeks of sale. Once the payment has cleared through PayPal, the funds will be immediately available to you.\n\n Ether Purchases. For purchases made through Ether, we will issue payments to you either directly to your digital wallet (e.g MetaMask) or to your Coinbase wallet.\n\n You can view all purchases and payments issued to you by going to your Sale History in the store manager. You can set your preferred payment options by going to your Store Settings page in the store manager.",
+  "how_get_started": "How do I get started?",
+  "how_get_started_content": "NFTology is currently invite-only, however we'd love for you to join us. Please reach out to us in our Discord community for an invite code."
 }

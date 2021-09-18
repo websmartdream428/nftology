@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import Loading from './components/Loading'
 // @import layout
 import MainLayout from './layout/MainLayout'
+import SubmitCollectible from './pages/SubmitCollectible'
 // @import page
 const Home = React.lazy(() => import('./pages/Home'))
 const Discover = React.lazy(() => import('./pages/Discover'))
@@ -81,6 +82,46 @@ const App: React.FC = () => {
               render={() => (
                 <MainLayout>
                   <SignInPage />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/overview"
+              render={() => (
+                <MainLayout>
+                  <SignInPage />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/creation"
+              render={() => (
+                <MainLayout>
+                  <SignInPage />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/collection"
+              render={() => (
+                <MainLayout>
+                  <SignInPage />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/settings"
+              render={() => (
+                <MainLayout>
+                  <SignInPage />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/submitcollectible"
+              render={() => (
+                <MainLayout>
+                  <SubmitCollectible />
                 </MainLayout>
               )}
             />

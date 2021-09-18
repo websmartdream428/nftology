@@ -31,7 +31,7 @@ export const DescTitle = styled.div`
   font-weight: 600;
   color: #111026;
   font-size: 17px;
-  margin: 30px 0;
+  margin: 15px 0;
 `
 
 export const DescSubtitle = styled.div`

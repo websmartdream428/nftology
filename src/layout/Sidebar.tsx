@@ -5,6 +5,7 @@ import SidebarTab from '../components/SidebarTab'
 
 import * as Styled from '../styledComponents/layout/StyledSideBar'
 import ConnectWalletBtn from './ConnectWalletBtn'
+import SubmitCollectibleBtn from './SubmitCollectibleBtn'
 
 const Sidebar: React.FC = () => {
   return (
@@ -16,15 +17,29 @@ const Sidebar: React.FC = () => {
         <SidebarTab />
       </Styled.SideBarTab>
       <Styled.SideBarButton>
-        <Link
-          to="/connectWallet"
-          style={{ textDecoration: 'none' }}
-          onClick={() => {
-            localStorage.setItem('currentRouter', 'connectWallet')
-          }}
-        >
-          <ConnectWalletBtn />
-        </Link>
+        {(localStorage.getItem('isAuth') === 'false' ||
+          localStorage.getItem('isAuth') === null) && (
+          <Link
+            to="/connectWallet"
+            style={{ textDecoration: 'none' }}
+            onClick={() => {
+              localStorage.setItem('currentRouter', 'connectWallet')
+            }}
+          >
+            <ConnectWalletBtn />
+          </Link>
+        )}
+        {localStorage.getItem('isAuth') === 'true' && (
+          <Link
+            to="/submitcollectible"
+            style={{ textDecoration: 'none' }}
+            onClick={() => {
+              localStorage.setItem('currentRouter', 'submitcollectible')
+            }}
+          >
+            <SubmitCollectibleBtn />
+          </Link>
+        )}
       </Styled.SideBarButton>
     </Styled.SideBarDiv>
   )

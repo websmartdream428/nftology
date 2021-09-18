@@ -37,12 +37,7 @@ const TextCard: React.FC = () => {
           <TextContent>{content.consect_sub_text}</TextContent>
           <TextFooter>
             <Button
-              border="none"
-              color="#E5E9FA"
-              height="54px"
               onClick={() => console.log('You clicked on the pink circle!')}
-              radius="12px"
-              width="219px"
               value={content.secondary}
             />
           </TextFooter>

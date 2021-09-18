@@ -27,15 +27,7 @@ export const BuyColumn = [
     Header: '',
     accessor: 'name',
     Cell: ({ cell }: CellProps) => (
-      <Button
-        border="none"
-        color="#E5E9FA"
-        height="54px"
-        onClick={() => console.log(cell)}
-        radius="12px"
-        width="219px"
-        value="Buy/Counter"
-      />
+      <Button onClick={() => console.log(cell)} value="Buy/Counter" />
     ),
   },
 ]
@@ -61,15 +53,7 @@ export const HistoryColumn = [
     Header: '',
     accessor: 'name',
     Cell: ({ cell }: CellProps) => (
-      <Button
-        border="none"
-        color="#E5E9FA"
-        height="54px"
-        onClick={() => console.log(cell)}
-        radius="12px"
-        width="219px"
-        value="Buy/Counter"
-      />
+      <Button onClick={() => console.log(cell)} value="Buy/Counter" />
     ),
   },
 ]
