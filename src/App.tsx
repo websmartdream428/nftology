@@ -14,6 +14,9 @@ const Trading = React.lazy(() => import('./pages/Trading'))
 const About = React.lazy(() => import('./pages/About'))
 const ConnectWallet = React.lazy(() => import('./pages/ConnectWallet'))
 const SignInPage = React.lazy(() => import('./pages/SignIn'))
+const Creation = React.lazy(() => import('./pages/Creation'))
+const Collection = React.lazy(() => import('./pages/Collection'))
+const Settings = React.lazy(() => import('./pages/Settings'))
 
 const AppContainer = styled.div`
   margin: 0;
@@ -89,7 +92,7 @@ const App: React.FC = () => {
               path="/overview"
               render={() => (
                 <MainLayout>
-                  <SignInPage />
+                  <Creation />
                 </MainLayout>
               )}
             />
@@ -97,7 +100,7 @@ const App: React.FC = () => {
               path="/creation"
               render={() => (
                 <MainLayout>
-                  <SignInPage />
+                  <Creation />
                 </MainLayout>
               )}
             />
@@ -105,7 +108,7 @@ const App: React.FC = () => {
               path="/collection"
               render={() => (
                 <MainLayout>
-                  <SignInPage />
+                  <Collection />
                 </MainLayout>
               )}
             />
@@ -113,7 +116,7 @@ const App: React.FC = () => {
               path="/settings"
               render={() => (
                 <MainLayout>
-                  <SignInPage />
+                  <Settings />
                 </MainLayout>
               )}
             />

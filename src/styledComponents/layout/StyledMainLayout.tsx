@@ -26,6 +26,6 @@ export const MainContent = styled.div<MainContentProps>`
 
 export const PageContainter = styled.div`
   margin: auto;
-  width: 80%;
+  width: 90%;
   margin-top: 136px;
 `
