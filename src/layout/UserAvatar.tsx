@@ -27,6 +27,7 @@ const AvatarDesc = styled.div`
 const UserName = styled.div`
   font-size: 20px;
   font-weight: 500;
+  color: #000;
 `
 
 const EmailAddress = styled.div`

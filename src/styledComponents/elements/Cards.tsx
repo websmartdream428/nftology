@@ -34,6 +34,9 @@ export const CardImageSlider = styled.div`
 `
 
 export const MoreText = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   cursor: pointer;
   color: #000;
   svg {

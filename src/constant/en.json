@@ -101,5 +101,6 @@
   "cryptocurrency": "CryptoCurrency",
   "card_number": "Card Number",
   "expiration_date": "Expiration Date",
-  "cvc": "CVC"
+  "cvc": "CVC",
+  "profile_txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec dui vitae enim consequat viverra. Nulla vestibulum sed ex ullamcorper hendrerit. Ut non justo eu turpis auctor condimentum ac sed tellus. Nulla varius molestie erat, sit amet sodales elit fermentum ac. Donec dictum convallis ex quis suscipit. In ante justo, lobortis aliquet ullamcorper in, iaculis id metus. Donec ornare elit eget feugiat bibendum."
 }

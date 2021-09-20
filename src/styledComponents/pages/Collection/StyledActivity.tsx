@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const CreationCard = styled.div`
   display: grid;
   grid-template-columns: 23% 23% 23% 23%;
-  grid-gap: 2%;
+  grid-column-gap: 2%;
+  grid-row-gap: 15px;
 `
 
 export const ImageCardDiv = styled.div`
@@ -44,4 +45,5 @@ export const Bell = styled.div`
     margin-left: 5px;
   }
   font-size: 12px;
+  color: #000;
 `
