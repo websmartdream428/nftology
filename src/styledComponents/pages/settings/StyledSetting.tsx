@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+type InfoInputProps = {
+  editFlag: boolean
+}
+
 export const AvatarDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -54,4 +58,37 @@ export const EditableInput = styled.input`
 export const UserInfo = styled.div`
   display: flex;
   justify-content: space-between;
+`
+
+export const FormDiv = styled.div`
+  margin: 10px 20px;
+`
+
+export const InfoLabel = styled.div`
+  margin: 2px 0;
+  font-size: 17px;
+  font-weight: 500;
+  svg {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+`
+
+export const InfoInput = styled.input<InfoInputProps>`
+  margin: 2px 0;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  ${({ editFlag }) =>
+    editFlag
+      ? 'padding: 15px 15px;color: #000;background-color:#e5e9fa;'
+      : 'padding: 15px 0;color: #a2a2c2;background-color:#fff;'};
+`
+
+export const EditBtn = styled.button`
+  border: none;
+  background-color: #fff;
+  outline: none;
 `

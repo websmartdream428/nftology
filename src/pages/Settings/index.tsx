@@ -11,11 +11,12 @@ import {
   CardDiv,
   AvatarBadge,
   ChangeAvatar,
-  EditableInput,
+  UserInfo,
 } from '../../styledComponents/pages/settings/StyledSetting'
 import { PencilSVG } from '../../components/CustomSVG'
 
-// import content from '../../constant/en.json'
+import content from '../../constant/en.json'
+import FormControl from './FormControl'
 
 const Settings: React.FC = () => {
   return (
@@ -30,23 +31,54 @@ const Settings: React.FC = () => {
         <UserName>User</UserName>
         <UserDescription>New User</UserDescription>
       </AvatarDiv>
-      <WhiteCard>{/* <UserInfo></UserInfo> */}</WhiteCard>
+      <WhiteCard>
+        <UserInfo>
+          <div>
+            <FormControl label={content.username} type="text" value="User" />
+            <FormControl
+              label={content.email}
+              type="email"
+              value="user@gmail.com"
+            />
+          </div>
+          <div>
+            <FormControl
+              label={content.password}
+              type="password"
+              value="password"
+            />
+          </div>
+        </UserInfo>
+      </WhiteCard>
       <CardDiv>
         <WhiteCard>
-          <EditableInput
-            value="adsf"
-            onChange={() => {
-              console.log('asdfasdf')
-            }}
-          />
+          <div>
+            <FormControl label={content.currency} type="text" value="USD" />
+            <FormControl
+              label={content.cryptocurrency}
+              type="text"
+              value="Ethereum"
+            />
+          </div>
         </WhiteCard>
         <WhiteCard>
-          <EditableInput
-            value="adsf"
-            onChange={() => {
-              console.log('asdfasdf')
-            }}
-          />
+          <UserInfo>
+            <div>
+              <FormControl
+                label={content.card_number}
+                type="text"
+                value="1234 5678 1234 5678"
+              />
+              <FormControl
+                label={content.expiration_date}
+                type="type"
+                value="01/21"
+              />
+            </div>
+            <div>
+              <FormControl label={content.cvc} type="password" value="cvc" />
+            </div>
+          </UserInfo>
         </WhiteCard>
       </CardDiv>
     </PageContainter>

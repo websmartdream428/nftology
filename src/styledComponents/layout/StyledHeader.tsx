@@ -16,7 +16,7 @@ export const HeaderBar = styled.div<HeaderProps>`
   ${({ mobileView, isAuthenticate }) =>
     mobileView
       ? 'right: 10%;'
-      : `${isAuthenticate === 'true' ? 'right: 30%;' : 'right: 10%;'}`}
+      : `${isAuthenticate === 'true' ? 'right: 350px;' : 'right: 10%;'}`}
   z-index: 1;
 `
 

@@ -41,7 +41,7 @@ const SignInPage: React.FC = () => {
               style={{ textDecoration: 'none' }}
               onClick={() => {
                 localStorage.setItem('isAuth', 'true')
-                localStorage.setItem('currentRouter', 'home')
+                localStorage.setItem('currentRouter', 'overview')
               }}
             >
               <MoreText

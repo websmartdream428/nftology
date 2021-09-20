@@ -27,7 +27,8 @@ export const WelcomeDesc = styled.div`
 export const WelcomeImage = styled.img`
   position: absolute;
   bottom: 0;
-  right: 15%;
+  right: 20%;
+  width: 180px;
 `
 
 export const WelcomeInfo = styled.div`
