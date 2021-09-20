@@ -37,7 +37,7 @@ const SignInPage: React.FC = () => {
           <SignDesc>{content.sign_description}</SignDesc>
           <ControlGroup>
             <Link
-              to="/home"
+              to="/overview"
               style={{ textDecoration: 'none' }}
               onClick={() => {
                 localStorage.setItem('isAuth', 'true')

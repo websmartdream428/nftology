@@ -50,3 +50,8 @@ export const EditableInput = styled.input`
   outline: none;
   width: 100%;
 `
+
+export const UserInfo = styled.div`
+  display: flex;
+  justify-content: space-between;
+`

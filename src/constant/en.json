@@ -93,5 +93,13 @@
   "latest_news": "Latest News",
   "welcome": "Welcome back User!",
   "welcome_content": "Check out what you missed while you were away",
-  "your_course": "Your Courses"
+  "your_course": "Your Courses",
+  "username": "Username",
+  "email": "Email",
+  "password": "Password",
+  "currency": "Currency",
+  "cryptocurrency": "CryptoCurrency",
+  "card_number": "Card Number",
+  "expiration_date": "Expiration Date",
+  "cvc": "CVC"
 }

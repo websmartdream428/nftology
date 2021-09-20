@@ -15,6 +15,8 @@ import {
 } from '../../styledComponents/pages/settings/StyledSetting'
 import { PencilSVG } from '../../components/CustomSVG'
 
+// import content from '../../constant/en.json'
+
 const Settings: React.FC = () => {
   return (
     <PageContainter>
@@ -28,7 +30,7 @@ const Settings: React.FC = () => {
         <UserName>User</UserName>
         <UserDescription>New User</UserDescription>
       </AvatarDiv>
-      <WhiteCard>asdfsadf</WhiteCard>
+      <WhiteCard>{/* <UserInfo></UserInfo> */}</WhiteCard>
       <CardDiv>
         <WhiteCard>
           <EditableInput
