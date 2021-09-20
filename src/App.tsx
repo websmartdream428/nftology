@@ -14,6 +14,7 @@ const Trading = React.lazy(() => import('./pages/Trading'))
 const About = React.lazy(() => import('./pages/About'))
 const ConnectWallet = React.lazy(() => import('./pages/ConnectWallet'))
 const SignInPage = React.lazy(() => import('./pages/SignIn'))
+const Overview = React.lazy(() => import('./pages/Overview'))
 const Creation = React.lazy(() => import('./pages/Creation'))
 const Collection = React.lazy(() => import('./pages/Collection'))
 const Settings = React.lazy(() => import('./pages/Settings'))
@@ -92,7 +93,7 @@ const App: React.FC = () => {
               path="/overview"
               render={() => (
                 <MainLayout>
-                  <Creation />
+                  <Overview />
                 </MainLayout>
               )}
             />

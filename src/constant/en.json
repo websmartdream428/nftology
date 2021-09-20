@@ -88,5 +88,10 @@
   "how_receive_payment": "How do I receive payment?",
   "how_receive_payment_content": "Depending on what form of payment was used to purchase your digital creation, you'll get paid accordingly.\n\n Credit Card Purchases. We support PayPal (a popular global payment solution) to issue payments for creations purchased using a credit card.\n\n PayPal. With PayPal, payments will be deposited to your PayPal account within two weeks of sale. Once the payment has cleared through PayPal, the funds will be immediately available to you.\n\n Ether Purchases. For purchases made through Ether, we will issue payments to you either directly to your digital wallet (e.g MetaMask) or to your Coinbase wallet.\n\n You can view all purchases and payments issued to you by going to your Sale History in the store manager. You can set your preferred payment options by going to your Store Settings page in the store manager.",
   "how_get_started": "How do I get started?",
-  "how_get_started_content": "NFTology is currently invite-only, however we'd love for you to join us. Please reach out to us in our Discord community for an invite code."
+  "how_get_started_content": "NFTology is currently invite-only, however we'd love for you to join us. Please reach out to us in our Discord community for an invite code.",
+  "viewer_statistics": "Viewer Statistics",
+  "latest_news": "Latest News",
+  "welcome": "Welcome back User!",
+  "welcome_content": "Check out what you missed while you were away",
+  "your_course": "Your Courses"
 }
