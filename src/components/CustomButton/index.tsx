@@ -14,9 +14,8 @@ const Button = ({ value, onClick }: CustomSVGProps) => {
         backgroundColor: '#E5E9FA',
         border: 'none',
         borderRadius: '12px',
-        height: '54px',
-        width: '219px',
         color: '#000',
+        padding: '10px 30px',
       }}
     >
       {/* Hello */}

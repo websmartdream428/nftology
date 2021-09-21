@@ -6,6 +6,7 @@ import Loading from './components/Loading'
 // @import layout
 import MainLayout from './layout/MainLayout'
 import SubmitCollectible from './pages/SubmitCollectible'
+
 // @import page
 const Home = React.lazy(() => import('./pages/Home'))
 const Discover = React.lazy(() => import('./pages/Discover'))
@@ -19,6 +20,7 @@ const Creation = React.lazy(() => import('./pages/Creation'))
 const Collection = React.lazy(() => import('./pages/Collection'))
 const Settings = React.lazy(() => import('./pages/Settings'))
 const Profile = React.lazy(() => import('./pages/Profile'))
+const Product = React.lazy(() => import('./pages/Product'))
 
 const AppContainer = styled.div`
   margin: 0;
@@ -135,6 +137,14 @@ const App: React.FC = () => {
               render={() => (
                 <MainLayout>
                   <Profile />
+                </MainLayout>
+              )}
+            />
+            <Route
+              path="/product"
+              render={() => (
+                <MainLayout>
+                  <Product />
                 </MainLayout>
               )}
             />
