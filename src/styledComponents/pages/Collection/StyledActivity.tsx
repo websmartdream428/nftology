@@ -5,6 +5,15 @@ export const CreationCard = styled.div`
   grid-template-columns: 23% 23% 23% 23%;
   grid-column-gap: 2%;
   grid-row-gap: 15px;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 32% 32% 32%;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 48% 48%;
+  }
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const ImageCardDiv = styled.div`

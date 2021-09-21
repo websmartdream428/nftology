@@ -15,8 +15,8 @@ export const HeaderBar = styled.div<HeaderProps>`
   justify-content: flex-end;
   ${({ mobileView, isAuthenticate }) =>
     mobileView
-      ? 'right: 10%;'
-      : `${isAuthenticate === 'true' ? 'right: 350px;' : 'right: 10%;'}`}
+      ? 'right: 30px;'
+      : `${isAuthenticate === 'true' ? 'right: 350px;' : 'right: 30px;'}`}
   z-index: 1;
 `
 

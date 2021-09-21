@@ -11,12 +11,16 @@ export const WhiteCard = styled.div`
 export const NoColorCard = styled.div`
   width: 100%;
   margin: 30px 0;
+  overflow: auto;
 `
 
 export const GridRowCard = styled.div`
   display: grid;
   grid-template-columns: 49% 49%;
   grid-gap: 2%;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const CardTitle = styled.div`
@@ -31,6 +35,13 @@ export const CardImageSlider = styled.div`
   display: grid;
   grid-template-columns: 32% 32% 32%;
   grid-column-gap: 2%;
+  grid-row-gap: 30px;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 48% 48%;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const MoreText = styled.div`
@@ -47,12 +58,17 @@ export const MoreText = styled.div`
 export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 32% 32% 32%;
-  grid-gap: 2%;
+  grid-column-gap: 2%;
+  grid-row-gap: 20px;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 48% 48%;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const ChildCard = styled.div`
   border-radius: 23px;
   width: 100%;
-  height: 125px;
-  position: relative;
 `

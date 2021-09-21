@@ -43,6 +43,9 @@ export const CardDiv = styled.div`
   display: grid;
   grid-template-columns: 49% 49%;
   grid-gap: 2%;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 100%;
+  }
 `
 export const EditableInput = styled.input`
   border: none;

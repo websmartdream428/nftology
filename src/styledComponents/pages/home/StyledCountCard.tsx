@@ -15,7 +15,7 @@ export const CounterCardDiv = styled.div`
   padding: 15px 40px 35px 40px;
   border-radius: 138px;
   background-color: #e5e9fa;
-  box-shadow: 0px 30px 60px #00000073;
+  box-shadow: 0px 30px 30px #00000073;
 `
 
 export const CounterNumber = styled.div`

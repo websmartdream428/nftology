@@ -24,6 +24,9 @@ export const PersonInfoInputs = styled.div`
   grid-template-columns: 48% 48%;
   grid-column-gap: 4%;
   grid-row-gap: 30px;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const DescTitle = styled.div`

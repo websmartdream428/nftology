@@ -4,12 +4,18 @@ export const ImageText = styled.div`
   display: grid;
   grid-template-columns: 45% 52%;
   grid-gap: 3%;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const TextImage = styled.div`
   display: grid;
   grid-template-columns: 52% 45%;
   grid-gap: 3%;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const Image = styled.img`
@@ -45,6 +51,12 @@ export const CardGroup = styled.div`
   display: grid;
   grid-template-columns: 32% 32% 32%;
   grid-gap: 2%;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 49% 49%;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const Card = styled.div`

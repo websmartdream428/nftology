@@ -4,6 +4,9 @@ export const ProfilePage = styled.div`
   display: grid;
   grid-template-columns: 30% 67%;
   grid-gap: 3%;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const ProfileText = styled.div`
@@ -21,4 +24,10 @@ export const ProfileCard = styled.div`
   grid-column-gap: 1%;
   grid-row-gap: 10px;
   margin-bottom: 10px;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 49% 49%;
+  }
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 100%;
+  }
 `

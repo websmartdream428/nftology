@@ -14,10 +14,8 @@ const CardFooterDiv = styled.div`
 const CardFooter = styled.div`
   display: flex;
   flex-direction: row;
-  position: absolute;
   background-color: #f5f5fb;
   width: calc(100% - 2px);
-  bottom: 0px;
   border-radius: 20px;
   padding: 25px;
   margin: 1px;

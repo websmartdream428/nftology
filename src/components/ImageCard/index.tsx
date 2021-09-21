@@ -39,8 +39,9 @@ const ImageCard = ({ timeFlag, isBell }: CustomProps) => {
           <Time>25h 25m 30s</Time>
         </TimePlayer>
       ) : null}
-
-      <AvatarCard isBell={isBell} />
+      <div style={{ position: 'absolute', width: '100%', bottom: 0 }}>
+        <AvatarCard isBell={isBell} />
+      </div>
     </ImageCardDiv>
   )
 }

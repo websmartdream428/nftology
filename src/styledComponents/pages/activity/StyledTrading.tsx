@@ -4,6 +4,9 @@ export const TableDescDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `
 
 export const TableDesc = styled.div`

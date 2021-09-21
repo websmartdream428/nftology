@@ -36,6 +36,9 @@ export const WelcomeInfo = styled.div`
   grid-template-columns: 40% 57%;
   grid-gap: 3%;
   margin: 20px 0;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 100%;
+  }
 `
 
 export const NewsContent = styled.div`
