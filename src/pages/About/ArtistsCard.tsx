@@ -1,20 +1,42 @@
 import React from 'react'
 import {
   AboutCard,
-  Image,
+  ArtistImg,
+  ArtistsGroup,
   ImageText,
   TextContent,
   TextDiv,
   TextTitle,
 } from '../../styledComponents/pages/about/StyledAbout'
 import content from '../../constant/en.json'
-import ArtistsImg from '../../assets/images/artists.png'
+// import ArtistsImg from '../../assets/images/Ellipse 1.png'
 
 const ArtistsCard: React.FC = () => {
   return (
     <AboutCard>
       <ImageText>
-        <Image src={ArtistsImg} alt="about" />
+        <ArtistsGroup>
+          <ArtistImg
+            src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/btc.png"
+            alt="artist"
+          />
+          <ArtistImg
+            src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/btc.png"
+            alt="artist"
+          />
+          <ArtistImg
+            src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/btc.png"
+            alt="artist"
+          />
+          <ArtistImg
+            src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/btc.png"
+            alt="artist"
+          />
+          <ArtistImg
+            src="https://raw.githubusercontent.com/atomiclabs/cryptocurrency-icons/master/128/color/btc.png"
+            alt="artist"
+          />
+        </ArtistsGroup>
         <TextDiv>
           <TextTitle>{content.artists_title}</TextTitle>
           <TextContent>{content.artists_content}</TextContent>

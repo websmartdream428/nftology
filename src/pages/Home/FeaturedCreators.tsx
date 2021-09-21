@@ -22,31 +22,31 @@ const FeaturedCreators: React.FC = () => {
       </CardTitle>
       <CardContainer>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
         <ChildCard>
-          <AvatarCard isBell={false} />
+          <AvatarCard isBell={false} subTitle="NameOfUser" isGallery={false} />
         </ChildCard>
       </CardContainer>
     </WhiteCard>

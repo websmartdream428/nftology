@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import avatar from '../../assets/images/Ellipse 1.png'
 import { ArrowSVG, BellSVG } from '../CustomSVG'
 
-type CustomProps = { isBell: boolean }
+type CustomProps = { isBell: boolean; subTitle: string; isGallery: boolean }
 
 const CardFooterDiv = styled.div`
   display: flex;
@@ -19,6 +19,7 @@ const CardFooter = styled.div`
   border-radius: 20px;
   padding: 25px;
   margin: 1px;
+  position: relative;
 `
 
 const Avatar = styled.img`
@@ -46,16 +47,16 @@ const AvatarSubtitle = styled.div`
 `
 
 const Bell = styled.div`
-  position: absolute;
   cursor: pointer;
   bottom: 15px;
   right: 15px;
   svg {
     margin-left: 5px;
   }
+  position: absolute;
 `
 
-const AvatarCard = ({ isBell }: CustomProps) => {
+const AvatarCard = ({ isBell, subTitle, isGallery }: CustomProps) => {
   return (
     <CardFooterDiv>
       <CardFooter>
@@ -64,14 +65,14 @@ const AvatarCard = ({ isBell }: CustomProps) => {
         </div>
         <AvatarDesc>
           <AvatarTitle>NameOfCollectible</AvatarTitle>
-          <AvatarSubtitle>NameOfUser</AvatarSubtitle>
+          <AvatarSubtitle>{subTitle}</AvatarSubtitle>
           {isBell ? (
             <Bell>
               <BellSVG />
             </Bell>
           ) : (
             <Bell>
-              View
+              {isGallery ? 'View Gallery' : 'View'}
               <ArrowSVG selected="#000" />
             </Bell>
           )}

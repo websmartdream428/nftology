@@ -53,7 +53,7 @@ export const ProductText = styled.div`
   display: flex;
   align-items: center;
   svg {
-    margin-right: 15px;
+    margin-right: 10px;
   }
 `
 

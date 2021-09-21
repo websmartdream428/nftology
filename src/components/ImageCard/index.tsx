@@ -40,7 +40,7 @@ const ImageCard = ({ timeFlag, isBell }: CustomProps) => {
         </TimePlayer>
       ) : null}
       <div style={{ position: 'absolute', width: '100%', bottom: 0 }}>
-        <AvatarCard isBell={isBell} />
+        <AvatarCard isBell={isBell} isGallery={false} subTitle="NameOfUser" />
       </div>
     </ImageCardDiv>
   )

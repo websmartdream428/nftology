@@ -5,16 +5,22 @@ import detail from '../../assets/images/detailinfo.png'
 
 const CardDiv = styled.div`
   width: 100%;
-  height: 397px;
-  box-shadow: 0px 30px 60px #0000000f;
-  background-color: #fff;
   border-radius: 52px;
-  background-image: url(${detail});
-  background-size: 100%;
+  display: flex;
+  align-items: center;
+`
+
+const Img = styled.img`
+  box-shadow: 0px 20px 10px #0000000f;
+  border-radius: 10%;
 `
 
 const ShowCard: React.FC = () => {
-  return <CardDiv> </CardDiv>
+  return (
+    <CardDiv>
+      <Img src={detail} width="100%" alt="group" />
+    </CardDiv>
+  )
 }
 
 export default ShowCard

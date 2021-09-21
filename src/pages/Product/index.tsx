@@ -95,29 +95,35 @@ const Home: React.FC = () => {
               <option>adsf</option>
             </CustomFilterSelect>
             <CustomTable>
-              <tr>
-                <th>{content.event}</th>
-                <th>{content.price}</th>
-                <th>{content.from}</th>
-                <th>{content.to}</th>
-                <th>{content.date}</th>
-              </tr>
-              <tr>
-                <td>Listed</td>
-                <td>
-                  <CurrentHistorySVG /> 0.1
-                </td>
-                <td>NameOfUser</td>
-                <td />
-                <td />
-              </tr>
-              <tr>
-                <td>Created</td>
-                <td />
-                <td>NameOfUser</td>
-                <td>NameOfUser</td>
-                <td>3 Months Ago</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>{content.event}</th>
+                  <th>{content.price}</th>
+                  <th>{content.from}</th>
+                  <th>{content.to}</th>
+                  <th>{content.date}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Listed</td>
+                  <td>
+                    <ProductText>
+                      <CurrentHistorySVG /> 0.1
+                    </ProductText>
+                  </td>
+                  <td>NameOfUser</td>
+                  <td />
+                  <td />
+                </tr>
+                <tr>
+                  <td>Created</td>
+                  <td />
+                  <td>NameOfUser</td>
+                  <td>NameOfUser</td>
+                  <td>3 Months Ago</td>
+                </tr>
+              </tbody>
             </CustomTable>
           </ProductWhiteCard>
         </div>
@@ -158,37 +164,45 @@ const Home: React.FC = () => {
               {content.details}
             </ProductCardTitle>
             <CustomTable>
-              <tr>
-                <th>{content.unit_price}</th>
-                <th>{content.quantity}</th>
-                <th> </th>
-              </tr>
-              <tr>
-                <td>
-                  <CurrentHistorySVG />
-                  0.1 ($264.8 9)
-                </td>
-                <td>15</td>
-                <td>
-                  <Button
-                    value={content.buy_now}
-                    onClick={() => console.log('Buy now clicked')}
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <CurrentHistorySVG />
-                  0.1 ($264.89)
-                </td>
-                <td>1</td>
-                <td>
-                  <Button
-                    value={content.buy_now}
-                    onClick={() => console.log('Buy now clicked')}
-                  />
-                </td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>{content.unit_price}</th>
+                  <th>{content.quantity}</th>
+                  <th> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <ProductText>
+                      <CurrentHistorySVG />
+                      0.1 ($264.8 9)
+                    </ProductText>
+                  </td>
+                  <td>15</td>
+                  <td>
+                    <Button
+                      value={content.buy_now}
+                      onClick={() => console.log('Buy now clicked')}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ProductText>
+                      <CurrentHistorySVG />
+                      0.1 ($264.89)
+                    </ProductText>
+                  </td>
+                  <td>1</td>
+                  <td>
+                    <Button
+                      value={content.buy_now}
+                      onClick={() => console.log('Buy now clicked')}
+                    />
+                  </td>
+                </tr>
+              </tbody>
             </CustomTable>
           </ProductWhiteCard>
 

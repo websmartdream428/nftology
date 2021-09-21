@@ -43,46 +43,46 @@ const Discover: React.FC = () => {
           {(selected === 'featured' || selected === 'new') && (
             <FeaturedContent>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
               <ChildCard>
-                <AvatarCard isBell={false} />
+                <AvatarCard isBell={false} subTitle="" isGallery />
               </ChildCard>
             </FeaturedContent>
           )}
