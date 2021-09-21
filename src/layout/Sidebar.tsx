@@ -11,7 +11,15 @@ const Sidebar: React.FC = () => {
   return (
     <Styled.SideBarDiv>
       <Styled.SibeBarLogo>
-        <Styled.LogoImg src={logo} alt="logo" />
+        <Link
+          to="/home"
+          style={{ textDecoration: 'none' }}
+          onClick={() => {
+            localStorage.setItem('currentRouter', 'home')
+          }}
+        >
+          <Styled.LogoImg src={logo} alt="logo" />
+        </Link>
       </Styled.SibeBarLogo>
       <Styled.SideBarTab>
         <SidebarTab />

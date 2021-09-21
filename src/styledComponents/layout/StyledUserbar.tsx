@@ -7,4 +7,7 @@ export const UserbarDiv = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  @media screen and (max-width: 1280px) {
+    width: 0;
+  }
 `

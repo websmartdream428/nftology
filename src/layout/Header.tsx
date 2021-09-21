@@ -19,8 +19,24 @@ const Header: React.FC = () => {
     setResponsiveness()
     window.addEventListener('resize', () => setResponsiveness())
   }, [])
+
+  const handleShowMenu = () => {
+    if (
+      localStorage.getItem('menuStatus') === null ||
+      localStorage.getItem('menuStatus') === 'off'
+    ) {
+      localStorage.setItem('menuStatus', 'on')
+    } else {
+      localStorage.setItem('menuStatus', 'off')
+    }
+  }
+
   return (
     <PageContainter style={{ marginTop: '0' }}>
+      {mobileView && (
+        <Styled.MenuShow onClick={handleShowMenu}>☰</Styled.MenuShow>
+      )}
+
       <Styled.HeaderBar
         isAuthenticate={
           localStorage.getItem('isAuth') === null ||

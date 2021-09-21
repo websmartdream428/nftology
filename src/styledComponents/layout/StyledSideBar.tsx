@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const SideBarDiv = styled.div`
+  @media screen and (max-width: 1280px) {
+    width: 0;
+  }
   background-color: #fff;
   width: 331px;
   height: 100;
@@ -18,6 +21,7 @@ export const LogoImg = styled.img`
   width: 214.64px;
   height: 65.69px;
   margin-top: 52px;
+  cursor: pointer;
 `
 
 export const SideBarTab = styled.div`

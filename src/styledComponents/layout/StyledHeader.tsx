@@ -47,3 +47,18 @@ export const SignInDiv = styled.div`
   cursor: pointer;
   color: #000;
 `
+
+export const MenuShow = styled.button`
+  position: fixed;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 48px;
+  justify-content: flex-end;
+  font-size: 30px;
+  z-index: 1;
+  border: none;
+  background: none;
+  cursor: pointer;
+`
