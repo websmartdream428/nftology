@@ -1,18 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
 
+const Div = styled.div`
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  height: 54px;
+  width: 219px;
+`
 const SubmitCollectibleBtn = () => {
   return (
-    <div
+    <Div
       style={{
-        cursor: 'pointer',
         backgroundColor:
           localStorage.getItem('currentRouter') === 'submitcollectible'
             ? '#902fff'
             : '#E5E9FA',
-        border: 'none',
-        borderRadius: '12px',
-        height: '54px',
-        width: '219px',
         margin: 'auto',
         display: 'flex',
         alignItems: 'center',
@@ -24,7 +27,7 @@ const SubmitCollectibleBtn = () => {
       }}
     >
       Submit Collectible
-    </div>
+    </Div>
   )
 }
 

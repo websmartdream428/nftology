@@ -17,6 +17,10 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 
   useEffect(() => {
     const setResponsiveness = () => {
+      if (window.innerWidth > 1280) {
+        localStorage.setItem('rightmenu', 'off')
+        localStorage.setItem('usermenu', 'off')
+      }
       return window.innerWidth <= 1280
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }))
@@ -28,23 +32,23 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <MainContainer>
       {!mobileView && <Sidebar />}
-      {mobileView && localStorage.getItem('rightmenu') === 'on' && <Sidebar />}
-      {!mobileView && (
-        <MainContent
-          mobileView={mobileView}
-          isAuthenticate={
-            localStorage.getItem('isAuth') === null ||
-            localStorage.getItem('isAuth') === 'false'
-              ? 'false'
-              : 'true'
-          }
-        >
-          <Header />
-          {children}
-          <Footer />
-        </MainContent>
-      )}
-      {mobileView &&
+      {mobileView && <Sidebar />}
+      {/* {!mobileView && ( */}
+      <MainContent
+        mobileView={mobileView}
+        isAuthenticate={
+          localStorage.getItem('isAuth') === null ||
+          localStorage.getItem('isAuth') === 'false'
+            ? 'false'
+            : 'true'
+        }
+      >
+        <Header />
+        {children}
+        <Footer />
+      </MainContent>
+      {/* )} */}
+      {/* {mobileView &&
         (localStorage.getItem('rightmenu') === 'off' ||
           localStorage.getItem('rightmenu') === null) &&
         (localStorage.getItem('usermenu') === 'off' ||
@@ -62,11 +66,9 @@ const MainLayout = ({ children }: MainLayoutProps) => {
             {children}
             <Footer />
           </MainContent>
-        )}
+        )} */}
       {!mobileView && localStorage.getItem('isAuth') === 'true' && <Userbar />}
-      {mobileView &&
-        localStorage.getItem('isAuth') === 'true' &&
-        localStorage.getItem('usermenu') === 'on' && <Userbar />}
+      {mobileView && localStorage.getItem('isAuth') === 'true' && <Userbar />}
     </MainContainer>
   )
 }

@@ -34,7 +34,14 @@ const Header: React.FC = () => {
     >
       {mobileView && (
         <Styled.MenuButtonGroup>
-          <Link to="/home" style={{ textDecoration: 'none' }}>
+          <Link
+            to={`/${
+              window.location.toString().split('/')[
+                window.location.toString().split('/').length - 1
+              ]
+            }`}
+            style={{ textDecoration: 'none' }}
+          >
             <Styled.MenuShow
               onClick={() => {
                 localStorage.setItem('rightmenu', 'on')
@@ -45,7 +52,14 @@ const Header: React.FC = () => {
             </Styled.MenuShow>
           </Link>
           {localStorage.getItem('isAuth') === 'true' && (
-            <Link to="/home" style={{ textDecoration: 'none' }}>
+            <Link
+              to={`/${
+                window.location.toString().split('/')[
+                  window.location.toString().split('/').length - 1
+                ]
+              }`}
+              style={{ textDecoration: 'none' }}
+            >
               <Styled.MenuShow
                 onClick={() => {
                   localStorage.setItem('usermenu', 'on')

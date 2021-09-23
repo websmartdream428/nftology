@@ -15,6 +15,10 @@ const LogoutDiv = styled.div`
   cursor: pointer;
   color: #000;
   @media screen and (max-width: 1280px) {
+    ${() =>
+      localStorage.getItem('usermenu') === 'on'
+        ? 'right: 50px;transition: 0.7s ease;'
+        : 'right: -331px;transition: 0.7s ease;'}
     color: #fff;
   }
 `

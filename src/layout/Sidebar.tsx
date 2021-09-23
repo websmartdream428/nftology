@@ -52,6 +52,25 @@ const Sidebar: React.FC = () => {
           </Link>
         )}
       </Styled.SideBarButton>
+      {localStorage.getItem('rightmenu') === 'on' && (
+        <Link
+          to={`/${
+            window.location.toString().split('/')[
+              window.location.toString().split('/').length - 1
+            ]
+          }`}
+          onClick={() => localStorage.setItem('rightmenu', 'off')}
+        >
+          <div
+            style={{
+              width: 'calc(100vw - 331px)',
+              position: 'fixed',
+              height: '100vh',
+              right: 0,
+            }}
+          />
+        </Link>
+      )}
     </Styled.SideBarDiv>
   )
 }

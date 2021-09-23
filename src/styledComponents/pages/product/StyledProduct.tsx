@@ -29,13 +29,16 @@ export const ToolButtonGroup = styled.div`
   position: absolute;
   right: 14px;
   top: 14px;
+  display: flex;
 `
 
 export const ToolButton = styled.button`
   width: 54px;
   height: 54px;
   font-size: 30px;
-  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 `
 
 export const ProductName = styled.div`

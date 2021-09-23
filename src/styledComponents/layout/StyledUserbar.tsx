@@ -13,5 +13,9 @@ export const UserbarDiv = styled.div`
     background-color: #000;
     position: fixed;
     right: 0;
+    ${() =>
+      localStorage.getItem('usermenu') === 'on'
+        ? 'right: 0;transition: 0.7s ease;'
+        : 'right: -331px;transition: 0.7s ease;'}
   }
 `

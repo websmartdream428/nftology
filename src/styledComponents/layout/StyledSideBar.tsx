@@ -3,10 +3,18 @@ import styled from 'styled-components'
 export const SideBarDiv = styled.div`
   @media screen and (max-width: 1280px) {
     background-color: #000;
+    position: fixed;
+    z-index: 2;
+    ${() =>
+      localStorage.getItem('rightmenu') === 'on'
+        ? 'left: 0;transition: 0.7s ease;'
+        : 'left: -331px;transition: 0.7s ease;'}
   }
   background-color: #fff;
   width: 331px;
+  z-index: 2;
   height: 100;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
