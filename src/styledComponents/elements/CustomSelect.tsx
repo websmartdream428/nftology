@@ -5,10 +5,6 @@ export const CustomSelect = styled.select`
   padding: 5px 10px;
   border-radius: 10px;
   border: none;
-  &:focus {
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
   outline: none;
 `
 

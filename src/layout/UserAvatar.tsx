@@ -35,6 +35,9 @@ const UserName = styled.div`
   font-size: 20px;
   font-weight: 500;
   color: #000;
+  @media screen and (max-width: 1280px) {
+    color: #fff;
+  }
 `
 
 const EmailAddress = styled.div`

@@ -71,3 +71,9 @@ export const ChildCard = styled.div`
   border-radius: 23px;
   width: 100%;
 `
+
+export const ChartCard = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+`
