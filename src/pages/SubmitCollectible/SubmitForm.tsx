@@ -26,7 +26,7 @@ const TextArea = styled.textarea`
 
 const SubmitForm: React.FC = () => {
   return (
-    <WhiteCard style={{ padding: '60px 100px' }}>
+    <WhiteCard style={{ padding: '5% 10%' }}>
       <DescTitle>{content.submit_your_work}</DescTitle>
       <PersonInfoInputs>
         <SearchInput placeholder="Name" />
@@ -34,7 +34,7 @@ const SubmitForm: React.FC = () => {
       </PersonInfoInputs>
       <DescTitle>{content.description_of_nft}</DescTitle>
       <DescSubtitle>{content.description_of_nft_content}</DescSubtitle>
-      <TextArea placeholder="Type Here...">asdf</TextArea>
+      <TextArea placeholder="Type Here..." />
       <DescTitle>{content.image_video_audio_3d}</DescTitle>
       <DescSubtitle>{content.image_video_audio_3d_content}</DescSubtitle>
       <Button

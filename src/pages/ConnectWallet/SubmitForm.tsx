@@ -15,7 +15,7 @@ import { ArrowSVG } from '../../components/CustomSVG'
 
 const SubmitForm: React.FC = () => {
   return (
-    <WhiteCard style={{ padding: '60px 100px' }}>
+    <WhiteCard style={{ padding: '5% 10%' }}>
       <PersonInfoInputs>
         <SearchInput placeholder="First Name*" />
         <SearchInput placeholder="Last Name*" />

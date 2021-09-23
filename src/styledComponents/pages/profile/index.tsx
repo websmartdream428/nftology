@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ProfilePage = styled.div`
   display: grid;
   grid-template-columns: 30% 67%;
-  grid-gap: 3%;
+  grid-column-gap: 3%;
   @media screen and (max-width: 800px) {
     grid-template-columns: 100%;
   }

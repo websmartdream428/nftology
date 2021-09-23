@@ -60,7 +60,16 @@ export const EditableInput = styled.input`
 
 export const UserInfo = styled.div`
   display: flex;
+  flex-direction: column;
+`
+
+export const FormGroup = styled.div`
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `
 
 export const FormDiv = styled.div`

@@ -11,7 +11,6 @@ export const WhiteCard = styled.div`
 export const NoColorCard = styled.div`
   width: 100%;
   margin: 30px 0;
-  overflow: auto;
 `
 
 export const GridRowCard = styled.div`

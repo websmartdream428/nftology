@@ -9,7 +9,7 @@ import content from '../../constant/en.json'
 
 const ThankYou: React.FC = () => {
   return (
-    <WhiteCard style={{ padding: '60px 100px' }}>
+    <WhiteCard style={{ padding: '5% 10%' }}>
       <ThankTitle>{content.thank_title}</ThankTitle>
       {content.thank_text.map((item) => (
         <ThankParagraph>{item}</ThankParagraph>

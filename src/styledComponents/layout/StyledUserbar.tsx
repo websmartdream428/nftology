@@ -10,4 +10,5 @@ export const UserbarDiv = styled.div`
   @media screen and (max-width: 1280px) {
     width: 0;
   }
+  z-index: 1;
 `

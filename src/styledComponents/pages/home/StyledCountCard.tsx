@@ -12,7 +12,7 @@ export const CounterCardGroup = styled.div`
 `
 
 export const CounterCardDiv = styled.div`
-  padding: 15px 40px 35px 40px;
+  padding: 2% 5%;
   border-radius: 138px;
   background-color: #e5e9fa;
   box-shadow: 0px 30px 30px #00000073;
@@ -23,10 +23,32 @@ export const CounterNumber = styled.div`
   font-weight: 700;
   font-family: 'Poppins';
   color: #350098;
+  @media screen and (max-width: 800px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 25px;
+  }
 `
 
 export const CounterDesc = styled.div`
   font-size: 15px;
   font-family: 'Poppins';
   color: #350098;
+  @media screen and (max-width: 800px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 9px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 8px;
+  }
+`
+
+export const CounterDiv = styled.div`
+  overflow: auto;
 `

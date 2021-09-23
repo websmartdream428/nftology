@@ -12,6 +12,7 @@ const UserTabBarDiv = styled.div`
   position: fixed;
   width: 331px;
   margin-top: 150px;
+  z-index: -1;
 `
 
 const UserTabBar: React.FC = () => {

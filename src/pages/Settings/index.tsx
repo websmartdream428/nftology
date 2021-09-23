@@ -12,6 +12,7 @@ import {
   AvatarBadge,
   ChangeAvatar,
   UserInfo,
+  FormGroup,
 } from '../../styledComponents/pages/settings/StyledSetting'
 import { PencilSVG } from '../../components/CustomSVG'
 
@@ -33,19 +34,19 @@ const Settings: React.FC = () => {
       </AvatarDiv>
       <WhiteCard>
         <UserInfo>
-          <div>
+          <FormGroup>
             <FormControl label={content.username} type="text" value="User" />
-            <FormControl
-              label={content.email}
-              type="email"
-              value="user@gmail.com"
-            />
-          </div>
-          <div>
             <FormControl
               label={content.password}
               type="password"
               value="password"
+            />
+          </FormGroup>
+          <div>
+            <FormControl
+              label={content.email}
+              type="email"
+              value="user@gmail.com"
             />
           </div>
         </UserInfo>
@@ -63,20 +64,20 @@ const Settings: React.FC = () => {
         </WhiteCard>
         <WhiteCard>
           <UserInfo>
-            <div>
+            <FormGroup>
               <FormControl
                 label={content.card_number}
                 type="text"
                 value="1234 5678 1234 5678"
               />
+              <FormControl label={content.cvc} type="password" value="cvc" />
+            </FormGroup>
+            <div>
               <FormControl
                 label={content.expiration_date}
                 type="type"
                 value="01/21"
               />
-            </div>
-            <div>
-              <FormControl label={content.cvc} type="password" value="cvc" />
             </div>
           </UserInfo>
         </WhiteCard>

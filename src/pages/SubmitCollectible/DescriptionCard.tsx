@@ -10,7 +10,7 @@ import { Arrow2SVG } from '../../components/CustomSVG'
 
 const DescriptionCard: React.FC = () => {
   return (
-    <WhiteCard style={{ padding: '60px 100px' }}>
+    <WhiteCard style={{ padding: '5% 10%' }}>
       <DescParagraph>
         <DescriptionTitle>
           <Arrow2SVG />

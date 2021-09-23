@@ -18,6 +18,9 @@ const SellShareCard = styled.div`
   background-color: #330b7e;
   width: 80%;
   border-radius: 28px;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
 `
 
 const SellImage = styled.img`
@@ -72,6 +75,9 @@ const BuySellDetails = styled.div`
   grid-template-columns: 32% 32% 32%;
   grid-gap: 1%;
   margin-top: 20px;
+  @media screen and (max-width: 320px) {
+    grid-template-columns: 100%;
+  }
 `
 
 const BuySellDetail = styled.div`

@@ -35,6 +35,9 @@ export const TextDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width: 600px) {
+    text-align: left;
+  }
 `
 
 export const TextContent = styled.div`
@@ -161,9 +164,6 @@ export const RightTextBoard = styled.div`
   padding: 8px 60px 8px 8px;
   color: #fff;
   overflow: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: right;
   margin-left: 10px;
 `
@@ -176,9 +176,6 @@ export const LeftTextBoard = styled.div`
   padding: 8px 8px 8px 60px;
   color: #fff;
   overflow: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-right: 10px;
 `
 
@@ -247,43 +244,55 @@ export const FeeCardGroup = styled.div`
 `
 
 export const FeePerYear = styled.div`
-  width: 55%;
-  aspect-ratio: 1;
-  padding: 5%;
-  border-radius: 10%;
+  border-radius: 20px;
+  padding: 3%;
   background-color: #330b7e;
   color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (min-width: 890px) {
+    width: 55%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  }
+  @media screen and (max-width: 890px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 `
 
 export const FutureProfits = styled.div`
-  width: 55%;
-  aspect-ratio: 1;
-  padding: 5%;
-  border-radius: 10%;
+  padding: 3%;
+  border-radius: 20px;
   background-color: #ffac45;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   color: #fff;
-  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (min-width: 890px) {
+    width: 55%;
+    aspect-ratio: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+  }
+  @media screen and (max-width: 890px) {
+    width: 100%;
+    margin-top: 10px;
+  }
 `
 
 export const FeeTitle = styled.div`
-  font-size: 50px;
+  font-size: 40px;
 `
 
 export const FeeSubTitle = styled.div`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 `
 

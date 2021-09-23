@@ -17,7 +17,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 
   useEffect(() => {
     const setResponsiveness = () => {
-      return window.innerWidth < 1280
+      return window.innerWidth <= 1280
         ? setState((prevState) => ({ ...prevState, mobileView: true }))
         : setState((prevState) => ({ ...prevState, mobileView: false }))
     }
