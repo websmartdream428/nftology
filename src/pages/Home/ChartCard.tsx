@@ -67,26 +67,13 @@ const data = {
     },
   ],
 }
-
-const options = {
-  scales: {
-    yAxes: [
-      {
-        ticks: {
-          beginAtZero: true,
-        },
-      },
-    ],
-  },
-}
-
 const ChartCard: React.FC = () => {
   return (
     <CardDiv>
       <ChartTitle>
         Contemporary Art Market Performance vs.S&P 500(1995-2020)
       </ChartTitle>
-      <Line data={data} options={options} />
+      <Line data={data} />
       <ChartPercentView>
         <ChartPercent>
           <Desc>Contemporary Art Annual Appreciation</Desc>

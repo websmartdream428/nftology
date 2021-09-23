@@ -33,21 +33,21 @@ const data = {
   ],
 }
 
-const options = {
-  legend: {
-    position: 'right',
-    labels: {
-      boxWidth: 10,
-    },
-  },
-  scales: {
-    xAxes: [
-      {
-        ticks: { display: false },
-      },
-    ],
-  },
-}
+// const options = {
+//   legend: {
+//     position: 'right',
+//     labels: {
+//       boxWidth: 10,
+//     },
+//   },
+//   scales: {
+//     xAxes: [
+//       {
+//         ticks: { display: false },
+//       },
+//     ],
+//   },
+// }
 
 const Statistics: React.FC = () => {
   return (
@@ -61,7 +61,7 @@ const Statistics: React.FC = () => {
         </CustomSelect>
       </CardTitle>
       <ChartCard>
-        <Line data={data} options={options} />
+        <Line data={data} />
       </ChartCard>
     </WhiteCard>
   )

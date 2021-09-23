@@ -49,17 +49,17 @@ const data = {
   ],
 }
 
-const options = {
-  scales: {
-    yAxes: [
-      {
-        ticks: {
-          beginAtZero: true,
-        },
-      },
-    ],
-  },
-}
+// const options = {
+//   scales: {
+//     yAxes: [
+//       {
+//         ticks: {
+//           beginAtZero: true,
+//         },
+//       },
+//     ],
+//   },
+// }
 
 const Home: React.FC = () => {
   return (
@@ -186,7 +186,7 @@ const Home: React.FC = () => {
               <PriceHistorySVG />
               {content.price_history}
             </ProductCardTitle>
-            <Line data={data} options={options} />
+            <Line data={data} />
           </ProductWhiteCard>
           <ProductWhiteCard>
             <ProductCardTitle>
