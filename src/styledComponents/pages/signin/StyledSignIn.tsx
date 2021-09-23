@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SignInForm = styled.div`
-  width: 60%;
+  width: 80%;
   margin: auto;
 `
 

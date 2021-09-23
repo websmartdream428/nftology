@@ -28,20 +28,45 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <MainContainer>
       {!mobileView && <Sidebar />}
-      <MainContent
-        mobileView={mobileView}
-        isAuthenticate={
-          localStorage.getItem('isAuth') === null ||
-          localStorage.getItem('isAuth') === 'false'
-            ? 'false'
-            : 'true'
-        }
-      >
-        <Header />
-        {children}
-        <Footer />
-      </MainContent>
+      {mobileView && localStorage.getItem('rightmenu') === 'on' && <Sidebar />}
+      {!mobileView && (
+        <MainContent
+          mobileView={mobileView}
+          isAuthenticate={
+            localStorage.getItem('isAuth') === null ||
+            localStorage.getItem('isAuth') === 'false'
+              ? 'false'
+              : 'true'
+          }
+        >
+          <Header />
+          {children}
+          <Footer />
+        </MainContent>
+      )}
+      {mobileView &&
+        (localStorage.getItem('rightmenu') === 'off' ||
+          localStorage.getItem('rightmenu') === null) &&
+        (localStorage.getItem('usermenu') === 'off' ||
+          localStorage.getItem('usermenu') === null) && (
+          <MainContent
+            mobileView={mobileView}
+            isAuthenticate={
+              localStorage.getItem('isAuth') === null ||
+              localStorage.getItem('isAuth') === 'false'
+                ? 'false'
+                : 'true'
+            }
+          >
+            <Header />
+            {children}
+            <Footer />
+          </MainContent>
+        )}
       {!mobileView && localStorage.getItem('isAuth') === 'true' && <Userbar />}
+      {mobileView &&
+        localStorage.getItem('isAuth') === 'true' &&
+        localStorage.getItem('usermenu') === 'on' && <Userbar />}
     </MainContainer>
   )
 }

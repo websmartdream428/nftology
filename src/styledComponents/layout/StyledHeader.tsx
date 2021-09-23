@@ -7,29 +7,42 @@ type HeaderProps = {
 export const HeaderBar = styled.div<HeaderProps>`
   position: fixed;
   text-align: right;
-  padding-top: 40px;
+  padding: 40px 5% 48px 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 48px;
   justify-content: flex-end;
+  width: 100%;
   ${({ mobileView, isAuthenticate }) =>
     mobileView
-      ? 'right: 30px;'
-      : `${isAuthenticate === 'true' ? 'right: 350px;' : 'right: 30px;'}`}
+      ? 'width: 100%;justify-content: space-between;'
+      : `${
+          isAuthenticate === 'true'
+            ? 'width: calc(100% - 662px);'
+            : 'width: calc(100% - 331px);'
+        }`}
   z-index: 1;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
 `
 
 export const SearchDiv = styled.div`
-  margin-right: 20px;
+  // margin-right: 20px;
   padding-right: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #e5e9fa;
   border-radius: 10px;
   height: 50px;
+  right: 0;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `
 
 export const SearchInput = styled.input`
@@ -44,21 +57,48 @@ export const SearchInput = styled.input`
 `
 
 export const SignInDiv = styled.div`
+  margin-left: 20px;
   cursor: pointer;
   color: #000;
 `
 
-export const MenuShow = styled.button`
-  position: fixed;
-  padding-top: 40px;
+export const MenuButtonGroup = styled.div`
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding-bottom: 48px;
-  justify-content: flex-end;
+
+  @media screen and (max-width: 600px) {
+    justify-content: space-between;
+    width: 100%;
+  }
+`
+
+export const MenuShow = styled.button`
+  // padding-top: 40px;
+  display: flex;
+
+  align-items: center;
+  // padding-bottom: 48px;
   font-size: 30px;
-  z-index: 1;
+  // z-index: 1;
   border: none;
   background: none;
   cursor: pointer;
+  color: #000;
+`
+
+export const RightDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+`
+
+export const UserMenuShow = styled.img`
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
 `

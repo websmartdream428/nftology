@@ -23,6 +23,7 @@ const UserTabBar: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'overview')
+          localStorage.setItem('usermenu', 'off')
         }}
       >
         <OverviewSVG />
@@ -32,6 +33,7 @@ const UserTabBar: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'creation')
+          localStorage.setItem('usermenu', 'off')
         }}
       >
         <CreationSVG />
@@ -41,6 +43,7 @@ const UserTabBar: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'collection')
+          localStorage.setItem('usermenu', 'off')
         }}
       >
         <CollectionSVG />
@@ -50,6 +53,7 @@ const UserTabBar: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'settings')
+          localStorage.setItem('usermenu', 'off')
         }}
       >
         <SettingSVG />

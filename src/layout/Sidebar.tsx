@@ -16,6 +16,7 @@ const Sidebar: React.FC = () => {
           style={{ textDecoration: 'none' }}
           onClick={() => {
             localStorage.setItem('currentRouter', 'home')
+            localStorage.setItem('rightmenu', 'off')
           }}
         >
           <Styled.LogoImg src={logo} alt="logo" />
@@ -32,6 +33,7 @@ const Sidebar: React.FC = () => {
             style={{ textDecoration: 'none' }}
             onClick={() => {
               localStorage.setItem('currentRouter', 'connectWallet')
+              localStorage.setItem('rightmenu', 'off')
             }}
           >
             <ConnectWalletBtn />
@@ -43,6 +45,7 @@ const Sidebar: React.FC = () => {
             style={{ textDecoration: 'none' }}
             onClick={() => {
               localStorage.setItem('currentRouter', 'submitcollectible')
+              localStorage.setItem('rightmenu', 'off')
             }}
           >
             <SubmitCollectibleBtn />

@@ -16,6 +16,7 @@ export const ProductWhiteCard = styled.div`
   background-color: #fdfdfe;
   width: 100%;
   position: relative;
+  overflow: auto;
 `
 
 export const ImageView = styled.div`
@@ -90,6 +91,10 @@ export const CustomFilterSelect = styled.select`
   border: none;
   width: 100%;
   margin-top: 20px;
+`
+
+export const TableDiv = styled.div`
+  overflow: auto;
 `
 
 export const CustomTable = styled.table`

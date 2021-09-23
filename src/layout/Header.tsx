@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowSVG, SearchIcon } from '../components/CustomSVG'
 import content from '../constant/en.json'
+import AvatarImg from '../assets/images/Ellipse 1.png'
 
 import * as Styled from '../styledComponents/layout/StyledHeader'
-import { PageContainter } from '../styledComponents/layout/StyledMainLayout'
+// import { PageContainter } from '../styledComponents/layout/StyledMainLayout'
 
 const Header: React.FC = () => {
   const [state, setState] = useState({ mobileView: false })
@@ -20,34 +21,46 @@ const Header: React.FC = () => {
     window.addEventListener('resize', () => setResponsiveness())
   }, [])
 
-  const handleShowMenu = () => {
-    if (
-      localStorage.getItem('menuStatus') === null ||
-      localStorage.getItem('menuStatus') === 'off'
-    ) {
-      localStorage.setItem('menuStatus', 'on')
-    } else {
-      localStorage.setItem('menuStatus', 'off')
-    }
-  }
-
   return (
-    <PageContainter style={{ marginTop: '0' }}>
+    // <PageContainter style={{ marginTop: '0' }}>
+    <Styled.HeaderBar
+      isAuthenticate={
+        localStorage.getItem('isAuth') === null ||
+        localStorage.getItem('isAuth') === 'false'
+          ? 'false'
+          : 'true'
+      }
+      mobileView={mobileView}
+    >
       {mobileView && (
-        <Styled.MenuShow onClick={handleShowMenu}>☰</Styled.MenuShow>
+        <Styled.MenuButtonGroup>
+          <Link to="/home" style={{ textDecoration: 'none' }}>
+            <Styled.MenuShow
+              onClick={() => {
+                localStorage.setItem('rightmenu', 'on')
+                localStorage.setItem('usermenu', 'off')
+              }}
+            >
+              ☰
+            </Styled.MenuShow>
+          </Link>
+          {localStorage.getItem('isAuth') === 'true' && (
+            <Link to="/home" style={{ textDecoration: 'none' }}>
+              <Styled.MenuShow
+                onClick={() => {
+                  localStorage.setItem('usermenu', 'on')
+                  localStorage.setItem('rightmenu', 'off')
+                }}
+              >
+                <Styled.UserMenuShow src={AvatarImg} />
+              </Styled.MenuShow>
+            </Link>
+          )}
+        </Styled.MenuButtonGroup>
       )}
-
-      <Styled.HeaderBar
-        isAuthenticate={
-          localStorage.getItem('isAuth') === null ||
-          localStorage.getItem('isAuth') === 'false'
-            ? 'false'
-            : 'true'
-        }
-        mobileView={mobileView}
-      >
+      <Styled.RightDiv>
         <Styled.SearchDiv>
-          <div>
+          <div style={{ width: '100%' }}>
             <Styled.SearchInput placeholder={content.search_placeholder} />
           </div>
           <div>
@@ -68,8 +81,9 @@ const Header: React.FC = () => {
             </Styled.SignInDiv>
           </Link>
         )}
-      </Styled.HeaderBar>
-    </PageContainter>
+      </Styled.RightDiv>
+    </Styled.HeaderBar>
+    // </PageContainter>
   )
 }
 

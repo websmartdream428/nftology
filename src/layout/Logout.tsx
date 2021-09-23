@@ -14,6 +14,9 @@ const LogoutDiv = styled.div`
   right: 50px;
   cursor: pointer;
   color: #000;
+  @media screen and (max-width: 1280px) {
+    color: #fff;
+  }
 `
 
 const Logout: React.FC = () => {
@@ -24,6 +27,7 @@ const Logout: React.FC = () => {
       onClick={() => {
         localStorage.setItem('isAuth', 'false')
         localStorage.setItem('currentRouter', 'signin')
+        localStorage.setItem('usermenu', 'off')
       }}
     >
       <LogoutDiv>

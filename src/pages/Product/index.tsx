@@ -14,6 +14,7 @@ import {
   ProductType,
   ProductWhiteCard,
   ReviewDiv,
+  TableDiv,
   ToolButton,
   ToolButtonGroup,
 } from '../../styledComponents/pages/product/StyledProduct'
@@ -94,37 +95,39 @@ const Home: React.FC = () => {
             <CustomFilterSelect>
               <option>adsf</option>
             </CustomFilterSelect>
-            <CustomTable>
-              <thead>
-                <tr>
-                  <th>{content.event}</th>
-                  <th>{content.price}</th>
-                  <th>{content.from}</th>
-                  <th>{content.to}</th>
-                  <th>{content.date}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Listed</td>
-                  <td>
-                    <ProductText>
-                      <CurrentHistorySVG /> 0.1
-                    </ProductText>
-                  </td>
-                  <td>NameOfUser</td>
-                  <td />
-                  <td />
-                </tr>
-                <tr>
-                  <td>Created</td>
-                  <td />
-                  <td>NameOfUser</td>
-                  <td>NameOfUser</td>
-                  <td>3 Months Ago</td>
-                </tr>
-              </tbody>
-            </CustomTable>
+            <TableDiv>
+              <CustomTable>
+                <thead>
+                  <tr>
+                    <th>{content.event}</th>
+                    <th>{content.price}</th>
+                    <th>{content.from}</th>
+                    <th>{content.to}</th>
+                    <th>{content.date}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Listed</td>
+                    <td>
+                      <ProductText>
+                        <CurrentHistorySVG /> 0.1
+                      </ProductText>
+                    </td>
+                    <td>NameOfUser</td>
+                    <td />
+                    <td />
+                  </tr>
+                  <tr>
+                    <td>Created</td>
+                    <td />
+                    <td>NameOfUser</td>
+                    <td>NameOfUser</td>
+                    <td>3 Months Ago</td>
+                  </tr>
+                </tbody>
+              </CustomTable>
+            </TableDiv>
           </ProductWhiteCard>
         </div>
         <div>
@@ -163,47 +166,49 @@ const Home: React.FC = () => {
               <Details1SVG />
               {content.details}
             </ProductCardTitle>
-            <CustomTable>
-              <thead>
-                <tr>
-                  <th>{content.unit_price}</th>
-                  <th>{content.quantity}</th>
-                  <th> </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <ProductText>
-                      <CurrentHistorySVG />
-                      0.1 ($264.8 9)
-                    </ProductText>
-                  </td>
-                  <td>15</td>
-                  <td>
-                    <Button
-                      value={content.buy_now}
-                      onClick={() => console.log('Buy now clicked')}
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <ProductText>
-                      <CurrentHistorySVG />
-                      0.1 ($264.89)
-                    </ProductText>
-                  </td>
-                  <td>1</td>
-                  <td>
-                    <Button
-                      value={content.buy_now}
-                      onClick={() => console.log('Buy now clicked')}
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            </CustomTable>
+            <TableDiv>
+              <CustomTable>
+                <thead>
+                  <tr>
+                    <th>{content.unit_price}</th>
+                    <th>{content.quantity}</th>
+                    <th> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <ProductText>
+                        <CurrentHistorySVG />
+                        0.1 ($264.8 9)
+                      </ProductText>
+                    </td>
+                    <td>15</td>
+                    <td>
+                      <Button
+                        value={content.buy_now}
+                        onClick={() => console.log('Buy now clicked')}
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ProductText>
+                        <CurrentHistorySVG />
+                        0.1 ($264.89)
+                      </ProductText>
+                    </td>
+                    <td>1</td>
+                    <td>
+                      <Button
+                        value={content.buy_now}
+                        onClick={() => console.log('Buy now clicked')}
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </CustomTable>
+            </TableDiv>
           </ProductWhiteCard>
 
           <ProductWhiteCard>

@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const SideBarDiv = styled.div`
   @media screen and (max-width: 1280px) {
-    width: 0;
+    background-color: #000;
   }
   background-color: #fff;
   width: 331px;
   height: 100;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;

@@ -129,6 +129,7 @@ const UserAvatar: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'profile')
+          localStorage.setItem('usermenu', 'off')
         }}
       >
         <AvatarDiv>

@@ -16,6 +16,7 @@ const SidebarTab: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'home')
+          localStorage.setItem('rightmenu', 'off')
         }}
       >
         <HomeSVG />
@@ -25,6 +26,7 @@ const SidebarTab: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'discover')
+          localStorage.setItem('rightmenu', 'off')
         }}
       >
         <DiscoverSVG />
@@ -34,6 +36,7 @@ const SidebarTab: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'activity')
+          localStorage.setItem('rightmenu', 'off')
         }}
       >
         <ActivitySVG />
@@ -43,6 +46,7 @@ const SidebarTab: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'trading')
+          localStorage.setItem('rightmenu', 'off')
         }}
       >
         <TradingSVG />
@@ -52,6 +56,7 @@ const SidebarTab: React.FC = () => {
         style={{ textDecoration: 'none' }}
         onClick={() => {
           localStorage.setItem('currentRouter', 'about')
+          localStorage.setItem('rightmenu', 'off')
         }}
       >
         <AboutSVG />
