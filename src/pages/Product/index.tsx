@@ -1,4 +1,5 @@
 import React from 'react'
+import { Line } from 'react-chartjs-2'
 import { FaShareAlt, FaUndo, FaEllipsisV } from 'react-icons/fa'
 import { PageContainter } from '../../styledComponents/layout/StyledMainLayout'
 import {
@@ -32,7 +33,33 @@ import {
 } from '../../components/CustomSVG'
 import content from '../../constant/en.json'
 import Button from '../../components/CustomButton'
-import ChartImg from '../../assets/images/Group 580.png'
+
+// import ChartImg from '../../assets/images/Group 580.png'
+
+const data = {
+  labels: [0, 1, 2, 3, 4, 5, 6, 7],
+  datasets: [
+    {
+      label: ' ',
+      data: [21, 35, 75, 51, 41, 47, 32, 45],
+      fill: false, // for Line chart
+      backgroundColor: '#aaa',
+      borderColor: '#aaa', // for Line chart
+    },
+  ],
+}
+
+const options = {
+  scales: {
+    yAxes: [
+      {
+        ticks: {
+          beginAtZero: true,
+        },
+      },
+    ],
+  },
+}
 
 const Home: React.FC = () => {
   return (
@@ -159,7 +186,7 @@ const Home: React.FC = () => {
               <PriceHistorySVG />
               {content.price_history}
             </ProductCardTitle>
-            <img src={ChartImg} alt="chart" width="100%" />
+            <Line data={data} options={options} />
           </ProductWhiteCard>
           <ProductWhiteCard>
             <ProductCardTitle>
